@@ -15,29 +15,85 @@ footer {
     line-height: 100px;
 }
 
-form {
-    /* Centralizar o formulário da página */
-    margin: 0 auto;
-    width: 400px;
-    /* Ver o esboço do formulário */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+
+    /* alterando o formulário */
+div.box {
+    margin:0 auto;
+    width:500px;
+    background: #dba776;
+    position: relative;
+    top:50px;
+    border:1px solid #dba776;
+
 }
 
-form div + div {
-    margin-top: 1em;
+div.box h1 {
+    color:#000000;
+    font-size: 18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #dba776;
+    border-top:1px solid #dba776;
+
 }
 
-label {
-    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhadas */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
+div.box label{
+    width:100%;
+    display: block;
+    background:#dba776;
+    border-top:1px solid #dba776;
+    border-bottom:1px solid #dba776;
+    padding:10px 0 10px 0;
+
 }
-input, textarea {
- /* Para garantir que todos os campos de texto tenham as mesmas configurações de fonte por padrão */
-    font: 1em sans-serif;
-    /* Para dar o mesmo tamanho a todos os campos de texto */
-    width: 300px;
+
+div.box label span{
+    display: block;
+    color:#000000;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+
+}
+
+    /* Parte do usuário digitar o texto */
+
+div.box .input_text {
+    color: #000000;
+    padding:10px 10px;
+    width:200px;
+    background:#fdfdfd;
+    border-bottom: 1px double #dba776;
+    border-top: 1px double #dba776;
+    border-left:1px double #dba776;
+    border-right:1px double #dba776;
+}
+
+div.box .message{
+    padding:7px 7px;
+    width:350px;
+    background:#ffffff;
+    border-bottom: 1px double #dba776;
+    border-top: 1px double #dba776;
+    border-left:1px double #dba776;
+    border-right:1px double #dba776;
+    overflow:hidden;
+    height:150px;
+}
+
+div.box .button{
+    margin:0 0 10px 0;
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    position: relative;
+    top:10px;
+    left:382px;
+    width:100px;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left:1px double #FF0033;
+    border-right:1px double #FF0033;
 }
