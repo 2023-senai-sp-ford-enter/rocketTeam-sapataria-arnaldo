@@ -2,7 +2,7 @@ body {
     background-color: #ffffff;
 }
 
-/* modificações do cabeçalho */
+/* modificações do rodapé */
 footer {
     position: absolute;
     bottom: 0;
@@ -18,7 +18,8 @@ footer {
 }
 
 
-/* alterando o formulário */
+/* página de contato */
+
 div.box {
     margin: 0 auto;
     width: 500px;
@@ -60,7 +61,7 @@ div.box label span {
 
 }
 
-/* Parte do usuário digitar o texto */
+/* Parte do formulario onde o usuário vai digitar o texto */
 
 div.box .input_text {
     color: #000000;
@@ -88,24 +89,26 @@ div.box .message {
 div.box .button {
     margin: 0 0 10px 0;
     padding: 4px 7px;
-    background: #CC0000;
+    background: #DCDCDC;
     border: 0px;
     position: relative;
     top: 10px;
     left: 382px;
     width: 100px;
-    border-bottom: 1px double #660000;
-    border-top: 1px double #660000;
-    border-left: 1px double #FF0033;
-    border-right: 1px double #FF0033;
+    border-bottom: 1px double #D3D3D3;
+    border-top: 1px double #D3D3D3;
+    border-left: 1px double #D3D3D3;
+    border-right: 1px double #D3D3D3;
 }
+
+/* cabeçalho da página inicial */
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #504e4c;
+    background-color:#b4abab;
     padding: 20px 20px;
 
 }
@@ -117,30 +120,75 @@ nav {
 
 }
 
-.titulo-sobre-nos {
+/* página sobre nós */
 
-    margin: 10px 10px 10px 10px;
-    font-size: 40px;
+.titulo-sobre-nos {
+    margin: 5px 5px 5px 170px;
+    font-size: 35px;
     padding: 30px 30px;
+    
 
 }
 
 .subtitulo-sobre-nos {
     margin: 5px 5px 5px 5px;
     font-size: 20px;
-    padding: 50px 50px;
+    padding: 30px 30px;
+
 }
 
 .titulo-arnaldo {
-    margin: 10px 10px 10px 10px;
-    font-size: 40px;
+    margin: 10px 10px 10px 30px;
+    font-size: 35px;
     padding: 30px 30px;
-
+    text-align: center;
 }
 
 .subtitulo-arnaldo {
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
+
+}
+
+/* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
+main {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D3D3D3;
+
+}
+
+section,
+aside {
+    width: 45%;
+}
+
+section header {
+    padding: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
+
+}
+
+section div {
+    padding: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
+
+}
+
+aside header {
+    padding: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
+
+}
+
+aside div {
+    padding: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
 
 }
