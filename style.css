@@ -1,20 +1,117 @@
-body {
+body{
     background-color: #ffffff;
+    font-family: 'Opens Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-/* modificações do rodapé */
-footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #964b00;
-    color: black;
+.background{
+    background-image: url(img/sapatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     width: 100%;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    font-size: 15px;
-    text-transform: uppercase;
+    max-width: 100%;
+    height: 100vh;
+}
 
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35s ease;
+    background-color: #ffffff;
+    padding: 14px 14%;
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    font-size: 1rem;
+    gap: 5rem;
+
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cabeçalho-link a:hover{
+    color: #dba776;
+}
+
+.banner{
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+    font-style: normal;
+}
+
+.banner h1{
+    font-size: 4rem;
+    font-family: Helvetica;
+    color:#dba776;
+}
+
+.banner p {
+    color:#ffffff;
+}
+
+.banner button{
+    background-color: #dba776;
+    padding: 1rem 3rem 1rem;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover{
+    background-color: #111;
+    transform: scaleY(1.2);
+
+}
+
+section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.cards img{
+    width: 400px;
+    height: auto;
+    transition: 0.35s ease;
+}
+
+.cards img:hover{
+    transform: scale(0.9) translateY(5px);
 }
 
 
@@ -101,32 +198,14 @@ div.box .button {
     border-right: 1px double #D3D3D3;
 }
 
-/* cabeçalho da página inicial */
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#b4abab;
-    padding: 20px 20px;
-
-}
-
-nav {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-
-}
 
 /* página sobre nós */
 
 .titulo-sobre-nos {
-    margin: 5px 5px 5px 170px;
+    margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding: 30px 30px;
-    
+
 
 }
 
@@ -156,7 +235,7 @@ main {
     padding: 50px 0px;
     display: flex;
     justify-content: space-around;
-    background-color: #D3D3D3;
+    /* background-color: #D3D3D3; */
 
 }
 
@@ -168,27 +247,27 @@ aside {
 section header {
     padding: 10px;
     text-align: center;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 
 }
 
 section div {
     padding: 10px;
     text-align: center;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 
 }
 
 aside header {
     padding: 10px;
     text-align: center;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 
 }
 
 aside div {
     padding: 10px;
     text-align: center;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 
 }
