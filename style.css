@@ -5,6 +5,8 @@ body{
     list-style: none;
 }
 
+/* página inicial */
+
 .background{
     background-image: url(img/sapatos.jpg);
     background-repeat: no-repeat;
@@ -96,108 +98,54 @@ section h1{
     font-size: 2rem;
 }
 
-.container-card{
-    display: flex;
+.produtos{
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 2rem;
+    text-align: center;
 }
 
-.cards img{
+.fotos img{
     width: 400px;
     height: auto;
     transition: 0.35s ease;
 }
 
-.cards img:hover{
+.fotos img:hover{
     transform: scale(0.9) translateY(5px);
 }
 
+.rodape{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background-color: #111;
+    padding: 4rem;
+    margin-top: 5rem;
+    display: grid;
+}
 
-/* página de contato */
-
-div.box {
-    margin: 0 auto;
-    width: 500px;
-    background: #dba776;
-    position: relative;
-    top: 50px;
-    border: 1px solid #dba776;
+.meio-rodape h3{
+    color:#fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
 
 }
 
-div.box h1 {
-    color: #000000;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 5px 0 5px 5px;
-    border-bottom: 1px solid #dba776;
-    border-top: 1px solid #dba776;
-
+.meio-rodape h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
 }
 
-div.box label {
-    width: 100%;
-    display: block;
-    background: #dba776;
-    border-top: 1px solid #dba776;
-    border-bottom: 1px solid #dba776;
-    padding: 10px 0 10px 0;
-
+.ultimo-texto{
+    text-align: center;
+    background-color: #111;
+    color:#fff;
 }
-
-div.box label span {
-    display: block;
-    color: #000000;
-    font-size: 12px;
-    float: left;
-    width: 100px;
-    text-align: right;
-    padding: 5px 20px 0 0;
-
-}
-
-/* Parte do formulario onde o usuário vai digitar o texto */
-
-div.box .input_text {
-    color: #000000;
-    padding: 10px 10px;
-    width: 200px;
-    background: #fdfdfd;
-    border-bottom: 1px double #dba776;
-    border-top: 1px double #dba776;
-    border-left: 1px double #dba776;
-    border-right: 1px double #dba776;
-}
-
-div.box .message {
-    padding: 7px 7px;
-    width: 350px;
-    background: #ffffff;
-    border-bottom: 1px double #dba776;
-    border-top: 1px double #dba776;
-    border-left: 1px double #dba776;
-    border-right: 1px double #dba776;
-    overflow: hidden;
-    height: 150px;
-}
-
-div.box .button {
-    margin: 0 0 10px 0;
-    padding: 4px 7px;
-    background: #DCDCDC;
-    border: 0px;
-    position: relative;
-    top: 10px;
-    left: 382px;
-    width: 100px;
-    border-bottom: 1px double #D3D3D3;
-    border-top: 1px double #D3D3D3;
-    border-left: 1px double #D3D3D3;
-    border-right: 1px double #D3D3D3;
-}
-
 
 /* página sobre nós */
 
@@ -205,15 +153,12 @@ div.box .button {
     margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding: 30px 30px;
-
-
 }
 
 .subtitulo-sobre-nos {
     margin: 5px 5px 5px 5px;
     font-size: 20px;
     padding: 30px 30px;
-
 }
 
 .titulo-arnaldo {
@@ -227,7 +172,6 @@ div.box .button {
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
-
 }
 
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
@@ -236,7 +180,6 @@ main {
     display: flex;
     justify-content: space-around;
     /* background-color: #D3D3D3; */
-
 }
 
 section,
@@ -248,26 +191,126 @@ section header {
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
-
 }
 
 section div {
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
-
 }
 
 aside header {
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
-
 }
 
 aside div {
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
+}
 
+/* página de contato */
+.contato{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.contato:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/fundo-form.webp) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.contato-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#dba776;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.esquerda{
+    height: 100%;
+    background: url(img/fundo-form.webp) no-repeat center;
+    background-size: cover;
+}
+
+.direita{
+    padding: 25px 40px;
+}
+
+h2{
+    position:relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:#fff;
+}
+
+.campo{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.campo:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.campo:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #111;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color:#b1aba4;
 }

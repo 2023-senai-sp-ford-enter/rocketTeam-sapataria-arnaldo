@@ -2,34 +2,23 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <form name="meuForm" method="post" id="formulario">
-        
-        
-       
-        <div class="box">
-            <h1>Formulario de Contato: </h1>
-
-            <label>
-                <span>Nome Completo</span>
-                <input type="text" class="input_text" name="nome" id="name" />
-            </label>
-
-            <label>
-                <span>Email</span>
-                <input type="text" class="input_text" name="email" id="email" />
-            </label>
-
-            <label>
-                <span>Assunto</span>
-                <input type="text" class="input_text" name="assunto" id="subject" />
-            </label>
-
-            <label>
-                <span>Mensagem</span>
-                <textarea class="message" name="feedback" id="feddback"></textarea>
-                <input type="button" class="button" value="Enviar" />
-            </label>
+    <div class="contato">
+        <div class="contato-box">
+            <div class="esquerda"></div>
+            <div class="direita">
+                <h2> Fale Conosco </h2>
+                <input type="text" class="campo" placeholder="Seu Nome">
+                <input type="email" class="campo" placeholder="Seu E-mail">
+                <input type="text" class="campo" placeholder="Seu Telefone">
+                <textarea class="campo area" placeholder="Mensagem"></textarea>
+                <button class="btn"> Enviar </button>
+            </div>
         </div>
-    </form>
+    </div>
+  
 </body>
