@@ -1,20 +1,20 @@
 body{
     background-color: #ffffff;
     font-family: 'Opens Sans', sans-serif;
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
+    list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
 }
 
 /* página inicial */
 
 .background{
     background-image: url(img/sapatos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
+    background-size: cover; /* aqui é para a imagem ocupar a área toda */
     background-position: center top;
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: 100vh; /* o vh é toda altura visível do navegador.*/
 }
 
 header{
@@ -26,7 +26,7 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* aqui serve para posicionar elementos em camadas uns sobre os outros */
     position: fixed;
     transition: all .35s ease;
     background-color: #ffffff;
@@ -145,6 +145,7 @@ section h1{
     text-align: center;
     background-color: #111;
     color:#fff;
+    padding: 1rem;
 }
 
 /* página sobre nós */
@@ -310,7 +311,7 @@ h2:after{
     color: #111;
     transition: .3s;
 }
-
+/* o hover ativa estilos em um elemento */
 .btn:hover{
     background-color:#b1aba4;
 }
