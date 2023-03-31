@@ -68,7 +68,7 @@ header{
     color:#dba776;
 }
 
-.banner p {
+.banner p{
     color:#ffffff;
 }
 
@@ -117,31 +117,29 @@ section h1{
     transform: scale(0.9) translateY(5px);
 }
 
+/* rodape da página inicial */
 .rodape{
     display: flex;
     text-align: center;
     justify-content: space-around;
     gap: 5rem;
     background-color: #111;
-    padding: 4rem;
-    margin-top: 5rem;
+    padding: 2rem;
+    margin-top: 3rem;
     display: grid;
 }
 
-.meio-rodape h3{
+.rodape h3{
     color:#fff;
     font-size: 23px;
     margin-bottom: 1.6rem;
-
+    margin-top: 3rem;
 }
 
-.meio-rodape h5{
+.rodape p{
     font-size: 15px;
     font-weight: 600;
     color: #555;
-}
-
-.ultimo-texto{
     text-align: center;
     background-color: #111;
     color:#fff;
@@ -149,64 +147,63 @@ section h1{
 }
 
 /* página sobre nós */
-
-.titulo-sobre-nos {
+.titulo-sobre-nos{
     margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding: 30px 30px;
 }
 
-.subtitulo-sobre-nos {
+.subtitulo-sobre-nos{
     margin: 5px 5px 5px 5px;
     font-size: 20px;
     padding: 30px 30px;
 }
 
-.titulo-arnaldo {
+.titulo-arnaldo{
     margin: 10px 10px 10px 30px;
     font-size: 35px;
     padding: 30px 30px;
     text-align: center;
 }
 
-.subtitulo-arnaldo {
+.subtitulo-arnaldo{
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
 }
 
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
-main {
+main{
     padding: 50px 0px;
     display: flex;
     justify-content: space-around;
-    /* background-color: #D3D3D3; */
+    background-color: #DCDCDC;
 }
 
 section,
-aside {
+aside{
     width: 45%;
 }
 
-section header {
+section header{
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
 }
 
-section div {
+section div{
+    padding: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
+}
+
+aside header{
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
 }
 
-aside header {
-    padding: 10px;
-    text-align: center;
-    /* background-color: #DCDCDC; */
-}
-
-aside div {
+aside div{
     padding: 10px;
     text-align: center;
     /* background-color: #DCDCDC; */
