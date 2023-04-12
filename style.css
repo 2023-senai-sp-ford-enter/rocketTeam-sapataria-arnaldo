@@ -6,9 +6,8 @@ body{
 }
 
 /* página inicial */
-
 .background{
-    background-image: url(img/sapatos.jpg);
+    background-image: url(img/shoe-master.avif);
     background-repeat: no-repeat; /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
     background-size: cover; /* aqui é para a imagem ocupar a área toda */
     background-position: center top;
@@ -59,21 +58,28 @@ header{
 .banner{
     padding: 7rem 0 0 8.5rem;
     line-height: 4rem;
-    font-style: normal;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.banner h1{
+.texto-banner{
     font-size: 4rem;
     font-family: Helvetica;
-    color:#dba776;
+    color: #111;;
+    font-family: 'Quicksand', sans-serif;
+    align-items: flex-end;
+    margin-top: 25%;
 }
 
-.banner p{
-    color:#ffffff;
+h2{
+    margin-top: 70px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .banner button{
-    background-color: #dba776;
+    background-color: #111;
     padding: 1rem 3rem 1rem;
     border-radius: 5px;
     color:#ffffff;
@@ -151,12 +157,16 @@ section h1{
     margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .subtitulo-sobre-nos{
     margin: 5px 5px 5px 5px;
     font-size: 20px;
     padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .titulo-arnaldo{
@@ -164,12 +174,16 @@ section h1{
     font-size: 35px;
     padding: 30px 30px;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .subtitulo-arnaldo{
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
@@ -177,7 +191,7 @@ main{
     padding: 50px 0px;
     display: flex;
     justify-content: space-around;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 }
 
 section,
@@ -194,7 +208,7 @@ section header{
 section div{
     padding: 10px;
     text-align: center;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
 }
 
 aside header{
@@ -210,67 +224,39 @@ aside div{
 }
 
 /* página de contato */
-.contato{
+form{
     font-family: 'Quicksand', sans-serif;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 75%;
     height: 100%;
-    padding: 20px 100px;
+    padding: 5px 100px;
 }
 
-.contato:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+ .direita{
     height: 100%;
-    background: url(img/fundo-form.webp) no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(50px);
-}
-
-.contato-box{
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:#dba776;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-}
+    padding: 25px 20px;
+    margin-top: 20px;
+} 
 
 .esquerda{
-    height: 100%;
-    background: url(img/fundo-form.webp) no-repeat center;
-    background-size: cover;
+    /* padding: 10px 10px; */
+    margin-top: 5px;
 }
 
-.direita{
-    padding: 25px 40px;
+.horario{
+    padding-top: 20px;
+    font-size: 20px;
+    
 }
 
 h2{
     position:relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
-}
-
-h2:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color:#fff;
+    font-size: 25px;
 }
 
 .campo{
@@ -301,14 +287,21 @@ h2:after{
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color: #fff;
+    background-color: #111;
     cursor: pointer;
     outline: none;
     border: none;
-    color: #111;
+    color: #fff;
     transition: .3s;
 }
 /* o hover ativa estilos em um elemento */
 .btn:hover{
     background-color:#b1aba4;
 }
+
+/* responsividade */
+/* @media screen and (max-width: 600px) {
+   .background{
+    width: 100%;
+   } 
+} */
