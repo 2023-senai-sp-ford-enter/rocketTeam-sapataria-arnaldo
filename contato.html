@@ -35,12 +35,19 @@
             <form action="" method="">
                 <div class="esquerda">
                     <h2> Fale Conosco </h2>
-                    <input type="text" class="campo" placeholder="Seu Nome">
-                    <input type="email" class="campo" placeholder="Seu E-mail">
+                    <input type="text" class="campo" placeholder="Seu Nome" autofocus required>
+                    <input type="email" class="campo" placeholder="Seu E-mail" required>
                     <input type="text" class="campo" placeholder="Seu Telefone">
-                    <input type="text" class="campo" placeholder="Assunto">
+
+                    <select type="text" class="campo" placeholder="Assunto" required>
+                        <option value="Prazo de Entrega">Prazo de Entrega</option>
+                        <option value="Orçamento">Orçamento</option>
+                        <option value="Pagamento">Pagamento</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
                     <textarea class="campo area" placeholder="Mensagem"></textarea>
-                    <button class="btn"> Enviar </button>
+                    <button class="btn">Enviar</button>
                 </div>
             </form>
         </section>
@@ -51,9 +58,32 @@
                     <h2>Horário de Funcionamento:</h2>
                     <p>De segunda a sábado das 08h às 20h, exceto feriados.</p>
                 </div>
+
+                <div class="redes-sociais">
+                    <a href="https://web.whatsapp.com/"target="_blank">
+                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" width="50" height="50">
+                    </a>
+                    <a href="https://www.facebook.com/"target="_blank">
+                        <img src="img/facebook.png" alt="Ícone do Facebook" width="50" height="50">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/instagram.png" alt="Ícone do Instagram" width="50" height="50">
+                    </a>
+                </div>
             </div>
         </aside>
     </main>
+  
+        <div class="newsletter">
+            <h1>Cadastre-se</h1>
+            <h3>e fique por dentro de todas as novidades</h3>
+            <input type="email" class="campo-news" placeholder="Seu E-mail" required>
+            <button class="btn-news">Enviar</button>
+            <p>Ao clicar em “enviar” você aceita os 
+            <a href="https://www.cea.com.br/politicas-cea" target="_blank">termos de uso da Sapataria do seu Arnaldo</p>
+            </a>
+        </div>
+
 
     <footer class="rodape">
         <address>

@@ -76,8 +76,9 @@ header{
     margin-top: 25%;
 }
 
-h2{
-    margin-top: 70px;
+.titulo-lançamento h2{
+    font-size: 40px;
+    margin-top: 150px;
     padding-top: 50px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -138,19 +139,20 @@ section h2{
 
 .rodape h3{
     color:#fff;
-    font-size: 23px;
+    font-size: 25px;
     margin-bottom: 1.6rem;
     margin-top: 3rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .rodape p{
     font-size: 15px;
     font-weight: 600;
-    color: #555;
+    color: #EFF2F7;
     text-align: center;
     background-color: var(--cor-principal);
-    color:#fff;
     padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* página sobre nós */
@@ -186,7 +188,6 @@ section h2{
     font-family: 'Quicksand', sans-serif;
 
 }
-
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
     padding: 50px 0px;
@@ -240,6 +241,11 @@ form{
     margin-bottom: 150px;
 }
 
+.esquerda h2{
+    margin-bottom: 1rem;
+}
+
+
 .horario p{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
@@ -248,14 +254,70 @@ form{
 }
 
 .horario h2{
-  margin-top: 1px;  
+  margin-top: 8px;  
+  position:relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-h2{
-    position:relative;
-    padding-bottom: 10px;
+.redes-sociais{
+    margin-top: 6px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.newsletter{
+    background-color: #EFF2F7;
+}
+
+.newsletter h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.newsletter h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.newsletter p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.btn-news{
+    background-color:  var(--cor-principal);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 20px;
+    width: 5%;
+    height: 3%;
+}
+
+.btn-news:hover{
+    background-color:#b1aba4;
+}
+
+.campo-news{
+    width: 10%;
+    height: 3%;
+    border: 2px solid color black;
+    background-color: color white;
+    margin-left: 43%;
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 25px;
 }
 
 .campo{
@@ -292,6 +354,7 @@ h2{
     border: none;
     color: #fff;
     transition: .3s;
+    border-radius: 20px;
 }
 /* o hover ativa estilos em um elemento */
 .btn:hover{
