@@ -13,9 +13,8 @@
             <img src="img/logo-a.png" alt="Logo da Página" width="200" height="50">
         </div> <!-- logo -->
 
-        <nav class="cabeçalho-link">
-            <li>
-                <!-- List Items (LI) -->
+        <nav class="header-link">
+            <li> <!-- List Items (LI) -->
                 <a href="index.html">Início</a> <!-- Anchor (A) -->
             </li>
             <li>
@@ -32,42 +31,41 @@
 
     <main>
         <section>
-            <form action="" method="">
-                <div class="esquerda">
+            <form class="contact-form" action="" method="" onsubmit="alert('Formulário enviado!')">
+                <div class="left">
                     <h2> Fale Conosco </h2>
-                    <input type="text" class="campo" placeholder="Seu Nome" autofocus required>
-                    <input type="email" class="campo" placeholder="Seu E-mail" required>
-                    <input type="text" class="campo" placeholder="Seu Telefone">
-
-                    <select type="text" class="campo" placeholder="Assunto" required>
+                    <input type="text" class="field" placeholder="Seu Nome" autofocus required>
+                    <input type="email" class="field" placeholder="Seu E-mail" required>
+                    <input type="text" class="field" placeholder="Seu Telefone">
+                    <select type="text" class="field" placeholder="Assunto" required>
                         <option value="Prazo de Entrega">Prazo de Entrega</option>
                         <option value="Orçamento">Orçamento</option>
                         <option value="Pagamento">Pagamento</option>
                         <option value="Outro">Outro</option>
                     </select>
 
-                    <textarea class="campo area" placeholder="Mensagem"></textarea>
-                    <button class="btn">Enviar</button>
+                    <textarea class="area" style="resize: none" placeholder="Mensagem"></textarea>
+                    <button class="button">Enviar</button>
                 </div>
             </form>
         </section>
         <aside>
-            <div class="direita">
-                <img src="img/fachada-classica.jpg" alt="Fachada da loja" width="800" height="500">
-                <div class="horario">
+            <div class="right">
+                <img src="./img/fachada-classica.jpg" alt="Fachada da loja" width="800" height="500">
+                <div class="hour">
                     <h2>Horário de Funcionamento:</h2>
                     <p>De segunda a sábado das 08h às 20h, exceto feriados.</p>
                 </div>
 
-                <div class="redes-sociais">
-                    <a href="https://web.whatsapp.com/"target="_blank">
-                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" width="50" height="50">
+                <div class="social-media">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="./img/whatsapp.png" alt="Ícone do WhatsApp" width="50" height="50">
                     </a>
-                    <a href="https://www.facebook.com/"target="_blank">
-                        <img src="img/facebook.png" alt="Ícone do Facebook" width="50" height="50">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./img/facebook.png" alt="Ícone do Facebook" width="50" height="50">
                     </a>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="img/instagram.png" alt="Ícone do Instagram" width="50" height="50">
+                        <img src="./img/instagram.png" alt="Ícone do Instagram" width="50" height="50">
                     </a>
                 </div>
             </div>
@@ -77,7 +75,7 @@
         <div class="newsletter">
             <h1>Cadastre-se</h1>
             <h3>e fique por dentro de todas as novidades</h3>
-            <input type="email" class="campo-news" placeholder="Seu E-mail" required>
+            <input type="email" class="field-news" placeholder="Seu E-mail" required>
             <button class="btn-news">Enviar</button>
             <p>Ao clicar em “enviar” você aceita os 
             <a href="https://www.cea.com.br/politicas-cea" target="_blank">termos de uso da Sapataria do seu Arnaldo</p>
@@ -85,7 +83,7 @@
         </div>
 
 
-    <footer class="rodape">
+    <footer class="footer">
         <address>
             <h3>Endereço</h3>
             <p>Rua Forte do Leme, 52</p>

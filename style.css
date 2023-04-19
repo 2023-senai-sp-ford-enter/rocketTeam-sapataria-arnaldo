@@ -43,21 +43,21 @@ header{
     font-size: 1rem;
 }
 
-.cabeçalho-link{
+.header-link{
     display: flex;
     font-size: 1rem;
     gap: 5rem;
 
 }
 
-.cabeçalho-link a{
+.header-link a{
     color: var(--cor-principal);
     font-weight: 700;
     transition: 0.3s;
     text-decoration: none;
 }
 
-.cabeçalho-link a:hover{
+.header-link a:hover{
     color: #dba776;
 }
 
@@ -67,7 +67,7 @@ header{
     font-family: 'Quicksand', sans-serif;
 }
 
-.texto-banner{
+.banner-text{
     font-size: 4rem;
     font-family: Helvetica;
     color: var(--cor-principal);
@@ -76,7 +76,7 @@ header{
     margin-top: 25%;
 }
 
-.titulo-lançamento h2{
+.title-products h2{
     font-size: 40px;
     margin-top: 150px;
     padding-top: 50px;
@@ -106,7 +106,7 @@ section h2{
     font-size: 2rem;
 }
 
-.produtos{
+.products{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -126,7 +126,7 @@ section h2{
 }
 
 /* rodape da página inicial */
-.rodape{
+.footer{
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -137,7 +137,7 @@ section h2{
     display: grid;
 }
 
-.rodape h3{
+.footer h3{
     color:#fff;
     font-size: 25px;
     margin-bottom: 1.6rem;
@@ -145,7 +145,7 @@ section h2{
     font-family: 'Quicksand', sans-serif;
 }
 
-.rodape p{
+.footer p{
     font-size: 15px;
     font-weight: 600;
     color: #EFF2F7;
@@ -156,38 +156,44 @@ section h2{
 }
 
 /* página sobre nós */
-.titulo-sobre-nos{
+.title-about-us{
     margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding: 30px 30px;
     font-family: 'Quicksand', sans-serif;
-
 }
 
-.subtitulo-sobre-nos{
+.subtitle-about-us{
     margin: 5px 5px 5px 5px;
     font-size: 20px;
     padding: 30px 30px;
     font-family: 'Quicksand', sans-serif;
-
 }
 
-.titulo-arnaldo{
+.title-arnaldo{
     margin: 10px 10px 10px 30px;
     font-size: 35px;
     padding: 30px 30px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-
 }
 
-.subtitulo-arnaldo{
+.subtitle-arnaldo{
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
     font-family: 'Quicksand', sans-serif;
-
 }
+
+/* .profile-arnaldo{
+    border-radius: 50%;
+    margin-top: 50px;
+} */
+
+.store-photo{
+    border-radius: 4%;
+}
+
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
     padding: 50px 0px;
@@ -221,7 +227,7 @@ aside div{
 }
 
 /* página de contato */
-form{
+.contact-form{
     font-family: 'Quicksand', sans-serif;
     position: relative;
     display: flex;
@@ -230,30 +236,30 @@ form{
     width: 50%;
     height: 100%;
     padding: 5px 100px;
+    margin-top: 80px;
 }
 
- .direita{
-     margin-top: 110px;
+ .right{
+     margin-top: 150px;
      margin-right: 50px;
 } 
 
-.esquerda{
+.left{
     margin-bottom: 150px;
 }
 
-.esquerda h2{
+.left h2{
     margin-bottom: 1rem;
 }
 
-
-.horario p{
+.hour p{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     margin-top: 5px;
     
 }
 
-.horario h2{
+.hour h2{
   margin-top: 8px;  
   position:relative;
   padding-bottom: 10px;
@@ -263,11 +269,20 @@ form{
 
 }
 
-.redes-sociais{
+.social-media{
     margin-top: 6px;
     display: flex;
     gap: 15px;
     justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.social-media img:hover{
+    background-color:#b1aba4;
 }
 
 .newsletter{
@@ -310,7 +325,7 @@ form{
     background-color:#b1aba4;
 }
 
-.campo-news{
+.field-news{
     width: 10%;
     height: 3%;
     border: 2px solid color black;
@@ -320,7 +335,7 @@ form{
     margin-bottom: 10px;
 }
 
-.campo{
+.field{
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
@@ -331,20 +346,27 @@ form{
     transition: .3s;
 }
 
-.campo:hover{
+.field:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.campo:focus{
+.field:focus{
     background-color: #fff;
     border: 2px solid rgba(30, 85, 250, 0.47);
 }
 
 .area{
     min-height: 150px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
 }
 
-.btn{
+.button{
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -357,18 +379,17 @@ form{
     border-radius: 20px;
 }
 /* o hover ativa estilos em um elemento */
-.btn:hover{
+.button:hover{
     background-color:#b1aba4;
 }
-
-.banner-catalogo {
+/* página de catálogo */
+.catalog-banner{
     width: 100%;
     height: 250px;
     object-fit: cover;
-    object-position: 0% 0%;
+    object-position: 50% 50%;
     margin-top: 50px;
 }
-
 /* responsividade */
 /* @media screen and (max-width: 600px) {
    .background{
