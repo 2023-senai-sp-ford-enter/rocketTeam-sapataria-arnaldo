@@ -3,14 +3,12 @@
     --cor-principal: #111;
 }
 
-
 body{
     background-color: #fff;
     font-family: 'Opens Sans', sans-serif;
     text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
     list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
 }
-
 /* página inicial */
 .background{
     background-image: url(img/shoe-master.avif);
@@ -47,7 +45,6 @@ header{
     display: flex;
     font-size: 1rem;
     gap: 5rem;
-
 }
 
 .header-link a{
@@ -97,7 +94,6 @@ header{
 .banner button:hover{
     background-color:var(--cor-principal);
     transform: scaleY(1.2);
-
 }
 
 section h2{
@@ -115,17 +111,16 @@ section h2{
     text-align: center;
 }
 
-.pics img{
+.pics-index img{
     width: 300px;
     height: auto;
     transition: 0.35s ease;
     cursor: pointer;
 }
 
-.pics img:hover{
+.pics-index img:hover{
     transform: scale(0.9) translateY(5px);
 }
-
 /* rodape da página inicial */
 .footer{
     display: flex;
@@ -155,7 +150,6 @@ section h2{
     padding: 1rem;
     font-family: 'Quicksand', sans-serif;
 }
-
 /* página sobre nós */
 .title-about-us{
     margin: 5px 5px 5px 30px;
@@ -194,7 +188,6 @@ section h2{
 .store-photo{
     border-radius: 4%;
 }
-
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
     padding: 50px 0px;
@@ -226,7 +219,6 @@ aside div{
     padding: 5px;
     text-align: center;
 }
-
 /* página de contato */
 .contact-form{
     font-family: 'Quicksand', sans-serif;
@@ -256,8 +248,7 @@ aside div{
 .hour p{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 5px;
-    
+    margin-top: 5px;  
 }
 
 .hour h2{
@@ -267,7 +258,6 @@ aside div{
   margin-bottom: 10px;
   font-size: 25px;
   font-family: 'Quicksand', sans-serif;
-
 }
 
 .social-media{
@@ -280,7 +270,6 @@ aside div{
     transition: .3s;
     border-radius: 20px;
     opacity: 1;
-
 }
 
 .social-media img{
@@ -311,7 +300,7 @@ aside div{
     padding-bottom: 1rem;
 }
 
-.btn-news{
+.btn-newsletter{
     background-color:  var(--cor-principal);
     cursor: pointer;
     outline: none;
@@ -323,7 +312,7 @@ aside div{
     height: 3%;
 }
 
-.btn-news:hover{
+.btn-newsletter:hover{
     background-color:#b1aba4;
 }
 
@@ -385,14 +374,58 @@ aside div{
     background-color:#b1aba4;
 }
 /* página de catálogo */
-/* .catalog-banner{
+.catalog-title{
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    margin-top: 150px;
+    max-width: 1300px;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    margin-top: 50px;
-} */
+    text-align: center;
+}
 
+.catalog-products{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.catalog-img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    position: relative;
+}
+
+.catalog-info{
+    position: relative;
+    width: 100%;
+}
+
+.price{
+    align-items: center;
+    border-top: 1px solid border;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 18px;
+}
+
+ins{
+    color: #ff6100;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 
 /* responsividade */
