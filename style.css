@@ -379,7 +379,6 @@ aside div{
     font-family: 'Quicksand', sans-serif;
     display: block;
     margin-top: 150px;
-    max-width: 1300px;
     width: 100%;
     text-align: center;
 }
@@ -392,6 +391,7 @@ aside div{
     max-width: 1300px;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .catalog-img{
@@ -427,10 +427,13 @@ ins{
     font-size: 18px;
 }
 
+.catalog-description{
+    font-family: 'Quicksand', sans-serif;
+}
 
-/* responsividade */
-/* @media screen and (max-width: 600px) {
+/* responsividade */ 
+@media screen and (max-width: 600px) { 
    .background{
     width: 100%;
    } 
-} */
+}
