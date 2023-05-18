@@ -76,7 +76,7 @@ header{
 .title-products h2{
     font-size: 40px;
     margin-top: 150px;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
@@ -154,14 +154,15 @@ section h2{
 .title-about-us{
     margin: 5px 5px 5px 30px;
     font-size: 35px;
-    padding: 30px 30px;
+    padding-top: 50px;
+    padding-right: 30px;
     font-family: 'Quicksand', sans-serif;
 }
 
 .subtitle-about-us{
     margin: 5px 5px 5px 5px;
     font-size: 20px;
-    padding: 30px 30px;
+    padding: 10px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -271,6 +272,11 @@ aside div{
     border-radius: 20px;
     opacity: 1;
 }
+.home-icons{
+    margin-top: 6px;
+    justify-content:flex-end;
+}
+
 
 .social-media img{
     cursor: pointer;
