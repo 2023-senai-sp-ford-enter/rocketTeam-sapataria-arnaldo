@@ -1,99 +1,440 @@
-body {
-    background-color: #ffffff;
+
+:root{
+    --cor-principal: #111;
 }
-    /* modificações do cabeçalho */
-footer {
-    position: absolute;
 
-    bottom: 0;
-
-    background-color: #964b00;
-    color: black;
+body{
+    background-color: #fff;
+    font-family: 'Opens Sans', sans-serif;
+    text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
+    list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
+}
+/* página inicial */
+.background{
+    background-image: url(img/shoe-master.avif);
+    background-repeat: no-repeat; /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
+    background-size: cover; /* aqui é para a imagem ocupar a área toda */
+    background-position: center top;
     width: 100%;
-    height: 100px;
+    max-width: 100%;
+    height: 100vh; /* o vh é toda altura visível do navegador.*/
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
     text-align: center;
-    line-height: 100px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* aqui serve para posicionar elementos em camadas uns sobre os outros */
+    position: fixed;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
 }
 
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+}
 
-    /* alterando o formulário */
-div.box {
-    margin:0 auto;
-    width:500px;
-    background: #dba776;
+.header-link{
+    display: flex;
+    font-size: 1rem;
+    gap: 5rem;
+}
+
+.header-link a{
+    color: var(--cor-principal);
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.header-link a:hover{
+    color: #dba776;
+}
+
+.banner{
+    padding: 7rem 0 0 6rem;
+    line-height: 4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner-text{
+    font-size: 4rem;
+    font-family: Helvetica;
+    color: var(--cor-principal);
+    font-family: 'Quicksand', sans-serif;
+    align-items: flex-end;
+    margin-top: 25%;
+}
+
+.title-products h2{
+    font-size: 40px;
+    margin-top: 150px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner button{
+    background-color: var(--cor-principal);
+    padding: 1rem 3rem 1rem;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover{
+    background-color:var(--cor-principal);
+    transform: scaleY(1.2);
+}
+
+section h2{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.pics-index img{
+    width: 300px;
+    height: auto;
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+
+.pics-index img:hover{
+    transform: scale(0.9) translateY(5px);
+}
+/* rodape da página inicial */
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background-color:var(--cor-principal);
+    padding: 2rem;
+    margin-top: 3rem;
+    display: grid;
+}
+
+.footer h3{
+    color:#fff;
+    font-size: 25px;
+    margin-bottom: 1.6rem;
+    margin-top: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #EFF2F7;
+    text-align: center;
+    background-color: var(--cor-principal);
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+/* página sobre nós */
+.title-about-us{
+    margin: 5px 5px 5px 30px;
+    font-size: 35px;
+    padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.subtitle-about-us{
+    margin: 5px 5px 5px 5px;
+    font-size: 20px;
+    padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title-arnaldo{
+    margin: 10px 10px 10px 30px;
+    font-size: 35px;
+    padding: 30px 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.subtitle-arnaldo{
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    padding: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* .profile-arnaldo{
+    border-radius: 50%;
+    margin-top: 50px;
+} */
+
+.store-photo{
+    border-radius: 4%;
+}
+/* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
+main{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section,
+aside{
+    width: 45%;
+}
+
+section header{
+    padding: 5px;
+    text-align: center;
+}
+
+section div{
+    padding: 5px;
+    text-align: center;
+}
+
+aside header{
+    padding: 5px;
+    text-align: center;
+}
+
+aside div{
+    padding: 5px;
+    text-align: center;
+}
+/* página de contato */
+.contact-form{
+    font-family: 'Quicksand', sans-serif;
     position: relative;
-    top:50px;
-    border:1px solid #dba776;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 5px 100px;
+    margin-top: 80px;
 }
 
-div.box h1 {
-    color:#000000;
+ .right{
+     margin-top: 150px;
+     margin-right: 50px;
+} 
+
+.left{
+    margin-bottom: 150px;
+}
+
+.left h2{
+    margin-bottom: 1rem;
+}
+
+.hour p{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;  
+}
+
+.hour h2{
+  margin-top: 8px;  
+  position:relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.social-media{
+    margin-top: 6px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    outline: none;
+    border: none;
+    transition: .3s;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.social-media img{
+    cursor: pointer;
+}
+
+.newsletter{
+    background-color: #EFF2F7;
+}
+
+.newsletter h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.newsletter h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.newsletter p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.btn-newsletter{
+    background-color:  var(--cor-principal);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 20px;
+    width: 5%;
+    height: 3%;
+}
+
+.btn-newsletter:hover{
+    background-color:#b1aba4;
+}
+
+.field-news{
+    width: 10%;
+    height: 3%;
+    border: 2px solid color black;
+    background-color: color white;
+    margin-left: 43%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 150px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+}
+
+.button{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color:  var(--cor-principal);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 20px;
+}
+/* o hover ativa estilos em um elemento */
+.button:hover{
+    background-color:#b1aba4;
+}
+/* página de catálogo */
+.catalog-title{
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.catalog-products{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.catalog-info{
+    position: relative;
+    width: 100%;
+}
+
+.price{
+    align-items: center;
+    border-top: 1px solid border;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.price del{
+    color: #ccc;
     font-size: 18px;
-    text-transform:uppercase;
-    padding:5px 0 5px 5px;
-    border-bottom:1px solid #dba776;
-    border-top:1px solid #dba776;
-
 }
 
-div.box label{
-    width:100%;
-    display: block;
-    background:#dba776;
-    border-top:1px solid #dba776;
-    border-bottom:1px solid #dba776;
-    padding:10px 0 10px 0;
-
+ins{
+    color: #ff6100;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-div.box label span{
-    display: block;
-    color:#000000;
-    font-size:12px;
-    float:left;
-    width:100px;
-    text-align:right;
-    padding:5px 20px 0 0;
-
+.catalog-description{
+    font-family: 'Quicksand', sans-serif;
 }
 
-    /* Parte do usuário digitar o texto */
-
-div.box .input_text {
-    color: #000000;
-    padding:10px 10px;
-    width:200px;
-    background:#fdfdfd;
-    border-bottom: 1px double #dba776;
-    border-top: 1px double #dba776;
-    border-left:1px double #dba776;
-    border-right:1px double #dba776;
-}
-
-div.box .message{
-    padding:7px 7px;
-    width:350px;
-    background:#ffffff;
-    border-bottom: 1px double #dba776;
-    border-top: 1px double #dba776;
-    border-left:1px double #dba776;
-    border-right:1px double #dba776;
-    overflow:hidden;
-    height:150px;
-}
-
-div.box .button{
-    margin:0 0 10px 0;
-    padding:4px 7px;
-    background:#CC0000;
-    border:0px;
-    position: relative;
-    top:10px;
-    left:382px;
-    width:100px;
-    border-bottom: 1px double #660000;
-    border-top: 1px double #660000;
-    border-left:1px double #FF0033;
-    border-right:1px double #FF0033;
+/* responsividade */ 
+@media screen and (max-width: 600px) { 
+   .background{
+    width: 100%;
+   } 
 }
