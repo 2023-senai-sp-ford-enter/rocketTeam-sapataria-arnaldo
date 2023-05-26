@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Contato - Sapataria do Arnaldo</title>
 </head>
     <header>
         <div class="logo">
@@ -26,6 +27,10 @@
                 <a href="contato.html">Contato</a>
             </li>
         </nav>
+
+        <div class="carrinho">
+            <a href="carrinho.html"><img src="./img/carrinho.png" alt="loco do carrinho" width="40" height="40"></a>
+        </div>
     </header>
 
     <main>
@@ -44,6 +49,11 @@
                     </select>
 
                     <textarea class="area" style="resize: none" placeholder="Mensagem"></textarea>
+
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Termos">
+                        <label for="vehicle1"> Ao clicar "enviar" você aceita os <a href="termos.html" target="_blank"> termos de uso</a></label><br> <br>
+                    </form>
                     <button class="button">Enviar</button>
                 </div>
             </form>

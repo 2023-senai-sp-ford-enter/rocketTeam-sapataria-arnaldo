@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 
 :root{
     --cor-principal: #111;
@@ -33,7 +35,7 @@ header{
     position: fixed;
     transition: all .35s ease;
     background-color: #fff;
-    padding: 14px 14%;
+    /* padding: 14px 14% */
 }
 
 .logo{
@@ -381,6 +383,7 @@ aside div{
     margin-top: 150px;
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .catalog-products{
@@ -437,4 +440,19 @@ ins{
    .background{
     width: 100%;
    } 
+}
+
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.terms{
+    text-align: justify;
+    margin-left: 20%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.termos{
+   margin-top: 100px;
 }
