@@ -22,7 +22,16 @@ body{
 .parent-box {
     display: flex;
     align-items: center;
+    padding: 10px 10px 10px 20px;
+}
+
+.paragraphs-about-us{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
     padding: 40px 20px 20px 20px;
+    margin-left: 20px;
+    text-align: left;
+
 }
 
 .parent-box img{
@@ -111,6 +120,12 @@ header {
     padding-top: 60px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+.paragraphs-beginning{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 20px 20px;
 }
 
 .banner button{
