@@ -26,6 +26,10 @@
                 <a href="contato.html">Contato</a>
             </li>
         </nav>
+
+        <div class="carrinho">
+            <a href="carrinho.html"><img src="./img/carrinho.png" alt="loco do carrinho" width="40" height="40"></a>
+        </div>
     </header>
 
     <main>
@@ -44,6 +48,11 @@
                     </select>
 
                     <textarea class="area" style="resize: none" placeholder="Mensagem"></textarea>
+
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Termos">
+                        <label for="vehicle1"> Ao clicar "enviar" você acieta os <a href="termos.html"> termos de uso</a></label><br> <br>
+                    </form>
                     <button class="button">Enviar</button>
                 </div>
             </form>

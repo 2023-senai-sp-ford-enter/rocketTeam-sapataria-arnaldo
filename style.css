@@ -33,7 +33,7 @@ header{
     position: fixed;
     transition: all .35s ease;
     background-color: #fff;
-    padding: 14px 14%;
+    /* padding: 14px 14% */
 }
 
 .logo{
@@ -437,4 +437,14 @@ ins{
    .background{
     width: 100%;
    } 
+}
+
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.terms{
+    text-align: justify;
+    margin-left: 20%;
 }
