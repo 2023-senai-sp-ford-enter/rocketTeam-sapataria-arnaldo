@@ -460,6 +460,7 @@ aside div{
     justify-content: center;
     max-width: 200px;
     position: relative;
+    cursor: pointer;
 }
 
 .catalog-info{
