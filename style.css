@@ -21,8 +21,49 @@ body{
     max-width: 100%;
     height: 100vh; /* o vh é toda altura visível do navegador.*/
 }
+.parent-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+}
 
-header{
+.paragraphs-about-us{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 20px 20px;
+    margin-left: 20px;
+    text-align: left;
+
+}
+
+.parent-box img{
+    height: 30px;
+    margin-left: 20px;
+}
+.parent-box-caption {
+    position: absolute;
+    margin-top: 10px;
+    left: 30;
+}
+
+.section-home {
+    margin: 5px auto;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-right: 30px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#work-philosophy {
+
+}
+
+#Deadline {
+
+}
+
+header {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
@@ -38,18 +79,18 @@ header{
     /* padding: 14px 14% */
 }
 
-.logo{
+.logo {
     font-weight: 500;
     font-size: 1rem;
 }
 
-.header-link{
+.header-link {
     display: flex;
     font-size: 1rem;
     gap: 5rem;
 }
 
-.header-link a{
+.header-link a {
     color: var(--cor-principal);
     font-weight: 700;
     transition: 0.3s;
@@ -78,9 +119,15 @@ header{
 .title-products h2{
     font-size: 40px;
     margin-top: 150px;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+.paragraphs-beginning{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 20px 20px;
 }
 
 .banner button{
@@ -156,14 +203,21 @@ section h2{
 .title-about-us{
     margin: 5px 5px 5px 30px;
     font-size: 35px;
-    padding: 30px 30px;
+    padding-top: 50px;
+    padding-right: 30px;
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+.section-paragraph{
+    
+
 }
 
 .subtitle-about-us{
     margin: 5px 5px 5px 5px;
     font-size: 20px;
-    padding: 30px 30px;
+    padding: 10px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -273,6 +327,11 @@ aside div{
     border-radius: 20px;
     opacity: 1;
 }
+.home-icons{
+    margin-top: 6px;
+    justify-content:flex-end;
+}
+
 
 .social-media img{
     cursor: pointer;
