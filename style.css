@@ -549,6 +549,26 @@ aside {
 .page-title {
     margin: 10px 0;
 }
+
+
+.newsletter h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.payment-methods{
+    display: flex; 
+    justify-content: center;
+   gap: 20px;
+}
+
+.delivery-methods{
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+}
+
   
 .banner-text {
     padding-top: 10%;
