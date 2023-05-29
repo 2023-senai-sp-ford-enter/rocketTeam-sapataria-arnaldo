@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 
 :root{
-    --color-main: #000000;
-    --color-brown:#8E3200;
-    --cor-white-header: #ffffff;
+    --cor-principal: #111;
 }
 
 body{
@@ -13,86 +13,85 @@ body{
 }
 /* página inicial */
 .background{
-    /*background-image: url(img/shoe-master.avif);*/
+    background-image: url(img/shoe-master.avif);
     background-repeat: no-repeat; /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
     background-size: cover; /* aqui é para a imagem ocupar a área toda */
     background-position: center top;
     width: 100%;
     max-width: 100%;
-    /*height: 100vh;  o vh é toda altura visível do navegador.*/
+    height: 100vh; /* o vh é toda altura visível do navegador.*/
 }
-
-
-nav {
-    /* Usado inline block para que o nav tenha a mesma altura sem necessidade ajustar o height */
-    display:inline-block;
-    width:100%;
-    height: 10px;
-}
-.logo-sapataria {
-    height:6%;
-    width:6%;
-    margin: 10px;
-}
-
-.menu {
-    width: 100%;
-    position:initial;
-}
-
-header{
-    
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000; /* aqui serve para posicionar elementos em camadas uns sobre os outros */
-    /*position: fixed;*/
-    transition: all .35s ease;
-    background-color: var(--color-brown);
-    padding-bottom: 1%;
-}
-
 .parent-box {
     display: flex;
-    padding: 20px 20px 20px 20px;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
 }
 
-.parent-box > p {
-    position: absolute;
-    margin-top: -30px;
-    left: 30px;
+.paragraphs-about-us{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 20px 20px;
+    margin-left: 20px;
+    text-align: left;
+
 }
 
+.parent-box img{
+    height: 30px;
+    margin-left: 20px;
+}
 .parent-box-caption {
     position: absolute;
     margin-top: 10px;
     left: 30;
 }
 
-.logo{
+.section-home {
+    margin: 5px auto;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-right: 30px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#work-philosophy {
+
+}
+
+#Deadline {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* aqui serve para posicionar elementos em camadas uns sobre os outros */
+    position: fixed;
+    transition: all .35s ease;
+    background-color: #fff;
+    /* padding: 14px 14% */
+}
+
+.logo {
     font-weight: 500;
     font-size: 1rem;
-    width: 10%;
-    max-width:100px;
-    max-height:100px;
-    width: auto;
-    height: auto;
-    float: left;
 }
 
-.header-link{
+.header-link {
     display: flex;
-    font-size: 12pt;
+    font-size: 1rem;
     gap: 5rem;
-    padding-left: 5%;
-    padding-top: 3%;
 }
 
-.header-link a{
-    color: var(--cor-white-header);
+.header-link a {
+    color: var(--cor-principal);
     font-weight: 700;
     transition: 0.3s;
     text-decoration: none;
@@ -103,46 +102,36 @@ header{
 }
 
 .banner{
-    padding: 10px 0px 0px 20px; ;
+    padding: 7rem 0 0 6rem;
     line-height: 4rem;
     font-family: 'Quicksand', sans-serif;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.banner-home {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 30px;
-    padding: 1%;
-    margin: auto;
 }
 
 .banner-text{
-    font-size: 30px;
+    font-size: 4rem;
     font-family: Helvetica;
-    color: var(--color-main);
+    color: var(--cor-principal);
     font-family: 'Quicksand', sans-serif;
     align-items: flex-end;
-    width: 40%;
-    height: 500px;
-    margin: 10px 0px 0px 0px;
-    object-fit: cover;
-    padding-top: 0%;
+    margin-top: 25%;
 }
 
 .title-products h2{
     font-size: 40px;
-    margin-top: 10px;
-    padding-top: 50px;
+    margin-top: 150px;
+    padding-top: 60px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
 
+.paragraphs-beginning{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 20px 20px;
+}
+
 .banner button{
-    background-color: var(--color-main);
+    background-color: var(--cor-principal);
     padding: 1rem 3rem 1rem;
     border-radius: 5px;
     color:#ffffff;
@@ -152,7 +141,7 @@ header{
 }
 
 .banner button:hover{
-    background-color:var(--color-main);
+    background-color:var(--cor-principal);
     transform: scaleY(1.2);
 }
 
@@ -187,7 +176,7 @@ section h2{
     text-align: center;
     justify-content: space-around;
     gap: 5rem;
-    background-color:var(--color-brown);
+    background-color:var(--cor-principal);
     padding: 2rem;
     margin-top: 3rem;
     display: grid;
@@ -206,7 +195,7 @@ section h2{
     font-weight: 600;
     color: #EFF2F7;
     text-align: center;
-    background-color: var(--color-brown);
+    background-color: var(--cor-principal);
     padding: 1rem;
     font-family: 'Quicksand', sans-serif;
 }
@@ -217,6 +206,12 @@ section h2{
     padding-top: 50px;
     padding-right: 30px;
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+.section-paragraph{
+    
+
 }
 
 .subtitle-about-us{
@@ -248,8 +243,6 @@ section h2{
 
 .store-photo{
     border-radius: 4%;
-    width: 80%;
-    height: 10%;
 }
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
@@ -295,12 +288,7 @@ aside div{
     margin-top: 80px;
 }
 
-.local-sapataria-img {
-    width:80%; 
-    height:50%;
-}
-
-.right{
+ .right{
      margin-top: 150px;
      margin-right: 50px;
 } 
@@ -344,6 +332,7 @@ aside div{
     justify-content:flex-end;
 }
 
+
 .social-media img{
     cursor: pointer;
 }
@@ -373,7 +362,7 @@ aside div{
 }
 
 .btn-newsletter{
-    background-color:  var(--color-main);
+    background-color:  var(--cor-principal);
     cursor: pointer;
     outline: none;
     border: none;
@@ -433,7 +422,7 @@ aside div{
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color:  var(--color-main);
+    background-color:  var(--cor-principal);
     cursor: pointer;
     outline: none;
     border: none;
@@ -453,6 +442,7 @@ aside div{
     margin-top: 150px;
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .catalog-products{
@@ -473,6 +463,7 @@ aside div{
     justify-content: center;
     max-width: 200px;
     position: relative;
+    cursor: pointer;
 }
 
 .catalog-info{
@@ -505,49 +496,9 @@ ins{
 
 /* responsividade */ 
 @media screen and (max-width: 600px) { 
-.banner {
-    width: 50%;
-    height: 10%;
-}
-   
-.parent-box {
-    width: 40%;
-}
-
-.background {
+   .background{
     width: 100%;
-}
-
-    .contact-section,
-    .contact-form{
-    padding-left: 80%;
-    width: 50%;
-    }
-
-aside {
-        width: 50%;
-        margin: 10%;
-}
-
-.social-media {
-    padding-left: 180%;
-}
-
-.hour {
-    width: 10%;
-}
-
-.right {
-        width: 50%;
-        padding-left: 100%;
-}
-
-.left {
-    width: 400%;
-    }
-
-.page-title {
-    margin: 10px 0;
+   } 
 }
 
 
@@ -569,89 +520,19 @@ aside {
     gap: 20px;
 }
 
-  
-.banner-text {
-    padding-top: 10%;
-    width: 160%;
+
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-header {
-    padding-bottom: 5%;
+.terms{
+    text-align: justify;
+    margin-left: 20%;
+    font-family: 'Nunito', sans-serif;
 }
 
-.logo-sapataria {
-    width: 20%;
+.termos{
+   margin-top: 100px;
 }
 
-.header-link {
-    padding-top: 10%;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-gap: 20px;
-    justify-content: center;
-    }
-
-.store-photo {
-    width: 200%;
-}
-
-.local-sapataria-img {
-    width: 350%;
-}
-
-.banner-home {
-    width: 100%;
-    height: 40%;
-}
-
-.title-products h2 {
-    padding-top: 50%;
-}
-
-.pics-index img{
-    width: 300px;
-    height: auto;
-    transition: 0.35s ease;
-    cursor: pointer;
-}
-
-.title-products {
-    width: 50%;
-    height: 10%;
-    padding-left: 10%;
-}
-
-.home-icons {
-    width: 10%;
-    height: 10%;
-}
-
-.title-about-us {
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        grid-gap: 10px;
-        justify-content: center;
-        width: 30%;
-}
-
-  .products {
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        grid-gap: 20px;
-        justify-content: center;
-  }
-
-  main {
-    width: 50%;
-  }
-
-
-
-}
-
-    @media screen and (max-width: 380px) {
-       .baseboard, .footer{
-        padding: 10px 5px;
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        grid-gap: 20px;
-        justify-content: center;
-      }
-    }
-  
