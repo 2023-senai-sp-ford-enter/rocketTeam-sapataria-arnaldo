@@ -501,6 +501,26 @@ ins{
    } 
 }
 
+
+.newsletter h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.payment-methods{
+    display: flex; 
+    justify-content: center;
+   gap: 20px;
+}
+
+.delivery-methods{
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+}
+
+
 .carrinho{
     font-weight: 500;
     font-size: 1rem;
@@ -515,3 +535,4 @@ ins{
 .termos{
    margin-top: 100px;
 }
+
