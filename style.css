@@ -47,12 +47,30 @@ nav {
     padding: 10px 10px 10px 20px;
 }
 
+.parent-box-2 {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+.parent-box-2 > p {
+    position: absolute;
+    margin-top: -30px;
+    left: 30px;
+}
+
+.parent-box-caption-2 {
+    position: absolute;
+    margin-top: 10px;
+    left: 30;
+}
+
 .paragraphs-about-us{
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     padding: 40px 20px 20px 20px;
     margin-left: 20px;
     text-align: left;
+    width: 150%;
 
 }
 
@@ -179,7 +197,7 @@ header {
 .paragraphs-beginning{
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    padding: 40px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .banner button{
@@ -545,6 +563,51 @@ ins{
 
 .catalog-description{
     font-family: 'Quicksand', sans-serif;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.catalog-img {
+    width: 80%;
+}
+
+.newsletter h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.payment-methods{
+    display: flex; 
+    justify-content: center;
+   gap: 20px;
+}
+
+.delivery-methods{
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.terms{
+    text-align: justify;
+    margin-left: 20%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.termos{
+   margin-top: 100px;
+}
+
+.video-sapa {
+    width: 100%;
+    padding-left: 100%;
 }
 
 /* responsividade */ 
@@ -615,7 +678,7 @@ header {
     }
 
 .store-photo {
-    width: 200%;
+    width: 300%;
 }
 
 .local-sapataria-img {
@@ -666,45 +729,39 @@ header {
     width: 50%;
   }
 
-
-
+  .parent-box-2 {
+    width: 40%;
 }
 
-
-.newsletter h3{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    text-align: center;
+.paragraphs-beginning {
+    width: 150%;
+    padding-left: 0%;
 }
 
-.payment-methods{
-    display: flex; 
-    justify-content: center;
-   gap: 20px;
+.paragraphs-about-us {
+    width: 250%;
+    padding-left: 10%;
 }
 
-.delivery-methods{
-    display: flex; 
-    justify-content: center;
-    gap: 20px;
+.video-sapa {
+    padding-left: 450%;
+    width: 550%;
 }
 
-
-.carrinho{
-    font-weight: 500;
-    font-size: 1rem;
+.catalog-img {
+    width: 80%;
 }
 
-.terms{
-    text-align: justify;
-    margin-left: 20%;
-    font-family: 'Nunito', sans-serif;
+.catalog-items {
+    padding-left: 10%;
+    width: 40%;
 }
 
-.termos{
-   margin-top: 100px;
+.catalog-description {
+    width: 50%;
 }
 
+}
 
 
     @media screen and (max-width: 380px) {
