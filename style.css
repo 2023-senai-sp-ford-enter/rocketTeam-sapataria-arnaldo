@@ -705,6 +705,12 @@ header {
    margin-top: 100px;
 }
 
+/* .carousel-item img {
+    height: 48rem;
+    object-fit: cover;
+    object-position: 0 100%;
+} */
+
 
 
     @media screen and (max-width: 380px) {
