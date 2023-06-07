@@ -3,6 +3,7 @@
 
 :root{
     --cor-principal: #111;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -442,10 +443,64 @@ ins{
    } 
 }
 
+
+/* ///////////////////////////////////////////// */
+
+
+/* inicio do carrinho de compras */
+
 .carrinho{
     font-weight: 500;
     font-size: 1rem;
 }
+
+.carrinho-img{
+    height: 120px;
+    width: 120px;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+.carrinho-layout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrinho-layout h1{
+    font-weight: 1000;
+    padding-bottom: 20px;
+}
+
+.carrinho-botão{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.carrinho-botão a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrinho-botão a:visited{
+    color: #fff;
+    text-decoration: none;
+    
+
+}
+/* fim do carrinho de compras*/
+
+
+/* ///////////////////////////////////////////// */
+
+
+/* inicio dos termos de uso */
 
 .terms{
     text-align: justify;
@@ -456,3 +511,5 @@ ins{
 .termos{
    margin-top: 100px;
 }
+
+/* fim dos termos de uso */
