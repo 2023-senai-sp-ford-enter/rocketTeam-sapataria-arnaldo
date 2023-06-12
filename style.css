@@ -477,10 +477,20 @@ ins{
     color: #fff;
     text-align: center;
     font-size: 18px;
-    margin: 20px 30px;
+    margin: 20px 30px 100px;
     padding: 20px 30px;
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.carrinho-botão:hover{
+    background-color: #424242;
+}
+
+.carrinho-icon-fogo{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
 }
 
 .carrinho-botão a:link{
@@ -491,6 +501,21 @@ ins{
 .carrinho-botão a:visited{
     color: #fff;
     text-decoration: none;
+}
+
+.popular-carrinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+.popular-images{
+    display: flex;
     
 
 }
