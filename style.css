@@ -516,9 +516,23 @@ span{
 
 .popular-images{
     display: flex;
-    margin-left: 300px;
+    margin-left: 150px;
 
 }
+
+.section-carrinho{
+    width: 0%;
+}
+
+.product-title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.carrinho-items{
+    margin-left: 50px;
+}
+
 /* fim do carrinho de compras*/
 
 
