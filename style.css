@@ -198,7 +198,7 @@ main{
     justify-content: space-around;
 }
 
-section,
+.contact-page,
 aside{
     width: 45%;
 }
@@ -394,7 +394,6 @@ aside div{
     margin: 0 auto;
     max-width: 1300px;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -443,6 +442,27 @@ ins{
    } 
 }
 
+.catalog-nav{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 20px 30px 20px 30px;
+    color: #fff;
+    
+}
+
+.catalog-nav a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.catalog-nav a:link{
+    text-decoration: none;
+    color: #fff;
+}
 
 /* ///////////////////////////////////////////// */
 
