@@ -33,6 +33,7 @@
         </nav>
     </header>
 
+<div class="container">
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,13 +42,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carrossel/Slide1.png" class="d-block w-100" alt="...">
+            <img src="./img/carrossel/Slide1.png" class="d-block w-100" alt="Imagem de sapato de couro masculino com um anúncio de desconto">
           </div>
           <div class="carousel-item">
-            <img src="./img/carrossel/Slide2.png" class="d-block w-100" alt="...">
+            <img src="./img/carrossel/Slide2.png" class="d-block w-100" alt="Imagem de uma mulher sorrindo olhando para o celular">
           </div>
           <div class="carousel-item">
-            <img src="./img/carrossel/Slide3.png" class="d-block w-100" alt="...">
+            <img src="./img/carrossel/Slide3.png" class="d-block w-100" alt="Imagens de acessórios de couro">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -58,7 +59,8 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
+</div>
 
         <div class="title-products">
             <h2>LANÇAMENTO</h2>
@@ -129,19 +131,24 @@
             </div> <!-- div fotos -->
         </div> <!-- div dos produtos -->
 
+        <h2 class="faq">Dúvidas Frequentes</h2>
         <section class="section-home" id="work-philosophy">
-            <div class="parent-box"> 
-                <h2>Filosofia de trabalho</h2>
-                <img src="./img/icons8-trabalho-50.png">
-            </div>
+        <details>
+            <!-- <div class="parent-box">  -->
+                <summary> Qual a Nossa Filosofia de Trabalho?</summary> 
+                        <img src="./img/icons8-trabalho-50.png">   
+            <!-- </div> -->
             <p class="paragraphs-beginning">O trabalho é um processo universal, está presente em todos os homens, em todas as gerações, mas também tem uma dimensão pessoal, pois é através do sujeito que se efetua e esse sujeito, através do trabalho, tem uma forma de realização pessoal.</p>
+        </details>
         </section>
 
-        <section class="section-home" id="deadline">
-            <div class="parent-box">
-                <h2 class="">Prazo de entrega</h2>
+
+    <section class="section-home" id="deadline">
+        <details>
+            <!-- <div class="parent-box"> -->
+                <summary>Qual o Nosso Prazo de Entrega?</summary>
                 <img src="./img/icons8-entrega-50.png">
-            </div>
+            <!-- </div> -->
             
 
             <p class="paragraphs-beginning">Limpeza e hidratação de sapatos e artigos de couro: Esse é um serviço de
@@ -172,7 +179,8 @@
                 Já para reparos mais complexos, como a troca de um forro ou a restauração completa da bolsa, o prazo
                 pode ser de até 10 dias úteis.</p>
 
-        </section>
+        </details>
+    </section>
 
         <footer class="footer">
 

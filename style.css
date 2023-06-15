@@ -53,7 +53,6 @@ nav {
     padding: 40px 20px 20px 20px;
     margin-left: 20px;
     text-align: left;
-
 }
 
 .parent-box img{
@@ -67,12 +66,10 @@ nav {
 }
 
 .section-home {
-    margin: 5px auto;
+    margin: 0px auto;
     font-size: 35px;
-    padding-top: 50px;
     padding-right: 30px;
     font-family: 'Quicksand', sans-serif;
-
 }
 
 header {
@@ -283,13 +280,14 @@ section h2{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* .profile-arnaldo{
+.profile-arnaldo{ 
     border-radius: 50%;
     margin-top: 50px;
-} */
+    width: 80%;
+    height: 10%;
+} 
 
 .store-photo{
-    border-radius: 4%;
     width: 80%;
     height: 10%;
 }
@@ -302,7 +300,7 @@ main{
 
 section,
 aside{
-    width: 45%;
+    width: 80%;
 }
 
 section header{
@@ -324,6 +322,11 @@ aside div{
     padding: 5px;
     text-align: center;
 }
+
+.container-img{
+    display: flex;
+}
+
 /* página de contato */
 .contact-form{
     font-family: 'Quicksand', sans-serif;
@@ -547,6 +550,27 @@ ins{
     font-family: 'Quicksand', sans-serif;
 }
 
+#work-philosophy details summary{
+    background-color: var(--color-brown);
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+    margin-top: 30px;
+    color: #fff;
+}
+#deadline details summary {
+    background-color: var(--color-brown);
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+    color: #fff;
+}
+
+.faq{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+}
+
 /* responsividade */ 
 @media screen and (max-width: 600px) { 
 .banner {
@@ -689,7 +713,6 @@ header {
     gap: 20px;
 }
 
-
 .carrinho{
     font-weight: 500;
     font-size: 1rem;
@@ -705,12 +728,9 @@ header {
    margin-top: 100px;
 }
 
-/* .carousel-item img {
-    height: 48rem;
-    object-fit: cover;
-    object-position: 0 100%;
-} */
-
+.carousel-inner{
+    height: 42em;
+}
 
 
     @media screen and (max-width: 380px) {
