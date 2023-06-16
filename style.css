@@ -450,7 +450,9 @@ ins{
     background-color: #111;
     padding: 20px 30px 20px 30px;
     color: #fff;
-    
+    z-index: 1;
+    position: sticky;
+    top: 66px;
 }
 
 .catalog-nav a:visited{
