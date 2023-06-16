@@ -350,11 +350,13 @@ footer{
     margin-top: 50px;
     width: 80%;
     height: 10%;
+    padding-left: 20%;
 } 
 
 .store-photo{
     width: 80%;
     height: 10%;
+    padding-left: 20%;
 }
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
@@ -433,14 +435,14 @@ aside div{
   position:relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 21px;
   font-family: 'Quicksand', sans-serif;
 }
 
 .social-media{
     margin-top: 6px;
     display: flex;
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
     outline: none;
     border: none;
@@ -662,7 +664,7 @@ aside {
 }
 
 .social-media {
-    padding-left: 180%;
+    padding-left: 170%;
 }
 
 .hour {
@@ -703,11 +705,12 @@ header {
     }
 
 .store-photo {
-    width: 300%;
+    width: 100%;
+    padding-top: 5rem;
 }
 
 .local-sapataria-img {
-    width: 350%;
+    width: 200%;
 }
 
 .banner-home {
@@ -764,13 +767,13 @@ header {
 }
 
 .paragraphs-about-us {
-    width: 250%;
+    width: 100%;
     padding-left: 10%;
 }
 
 .video-sapa {
-    padding-left: 450%;
-    width: 550%;
+    padding-left: 8rem;
+    width: 100%;
 }
 
 .catalog-img {
@@ -792,10 +795,6 @@ header {
     padding: 3rem 2rem;
 }
 
-}
-
-.carousel-inner{
-    height: 42em;
 }
 
 
