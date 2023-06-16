@@ -4,7 +4,8 @@
 :root{
     --color-main: #000000;
     --color-brown:#8E3200;
-    --cor-white-header: #ffffff;
+    --color-white-header: #ffffff;
+    --color-brown-neutral: #772a00;
 }
 
 body{
@@ -145,7 +146,7 @@ header {
 }
 
 .header-link a{
-    color: var(--cor-white-header);
+    color: var(--color-white-header);
     font-weight: 700;
     transition: 0.3s;
     text-decoration: none;
@@ -241,47 +242,78 @@ section h2{
     transform: scale(0.9) translateY(5px);
 }
 /* rodape da página inicial */
-.footer{
-    gap: 5rem;
+footer{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: var(--color-white-header);
+}
+
+#footer_content {
     background-color:var(--color-brown);
-    padding: 2rem;
-    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
 }
 
-.footer-title {
-    color: var(--cor-white-header);
-    font-size: 25px;
-    margin-bottom: 15%;
-    margin-top: 10%;
-    font-family: 'Quicksand', sans-serif;
+#footer-info h3 {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    color: var(--color-white-header);
+    font-weight: 800;
+    font-size: 15pt;
 }
 
-.footer-title-payment {
-    color: var(--cor-white-header);
-    font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 100%;
+#footer-info p {
+    margin-bottom: 0.75rem;
+    color: var(--color-white-header);
+    font-size: 9pt;
 }
 
-.footer-title-delivery {
-    color: var(--cor-white-header);
-    font-size: 25px;
-    margin-bottom: 5%;
-    margin-top: 10%;
-    font-family: 'Quicksand', sans-serif;
+.footer-payments {
+    width: 10%;
 }
 
-.footer-info {
-    font-size: 15px;
-    font-weight: 200;
-    color: var(--cor-white-header);
-    font-family: 'Quicksand', sans-serif;
+#footer_payment h3 {
+    font-weight: 800;
+    font-size: 15pt;
+    margin-top: 0.75rem;
 }
 
-.copy-footer {
-    color: var(--cor-white-header);
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
+#footer_payment_method {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.footer-delivery-icons {
+    width: 10%;
+    padding-left: 5rem;
+}
+
+#footer_delivery h3 {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    font-weight: 800;
+    font-size: 15pt;
+}
+
+#footer_delivery_method {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-brown-neutral);
+    font-size: 0.7rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
 /* página sobre nós */
@@ -590,13 +622,8 @@ ins{
     text-align: center;
 }
 
-.footer-section {
-    display: flex;
-}
-
 .payment-methods{
     display: flex;
-    padding-left: 30%;
 }
 
 .sapataria-info {
@@ -778,62 +805,25 @@ header {
     width: 50%;
 }
 
-.footer-section {
-    width: 100%;
-    flex-direction: column;
+#footer_content {
+    grid-template-columns: repeat(1,1fr);
+    padding: 3rem 2rem;
 }
-
-.footer-title {
-    font-size: 120%;
-    margin: 10px;
-    padding: 0;
-}
-
-.footer-title-payment {
-    font-size: 120%;
-    margin: 10px;
-    padding: 0;
-}
-
-.footer-title-delivery {
-    font-size: 120%;
-    margin: 10px;
-    margin-top: 20px;
-    padding: 0;
-}
-
-.footer-info {
-    font-size: 120%;
-    margin: 20px;
-    padding: 0;
-}
-
-.copy-footer {
-    font-size: 100%;
-}
-
-.payment-methods {
-    padding: 0;
-    margin: 10px;
-}
-
-.delivery-methods {
-    padding: 0%;
-    margin: 10px;
-}
-
-
-
 
 }
 
 
     @media screen and (max-width: 380px) {
-       .baseboard, .footer{
+       .baseboard{
         padding: 10px 5px;
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
         grid-gap: 20px;
         justify-content: center;
       }
+
+      #footer_content {
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }
     }
   
