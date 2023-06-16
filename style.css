@@ -402,7 +402,6 @@ aside div{
     align-items: center;
     display: flex;
     justify-content: center;
-    max-width: 200px;
     position: relative;
     cursor: pointer;
 }
