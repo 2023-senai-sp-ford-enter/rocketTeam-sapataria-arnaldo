@@ -86,12 +86,10 @@ nav {
 }
 
 .section-home {
-    margin: 5px auto;
+    margin: 0px auto;
     font-size: 35px;
-    padding-top: 50px;
     padding-right: 30px;
     font-family: 'Quicksand', sans-serif;
-
 }
 
 header {
@@ -347,13 +345,14 @@ footer{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* .profile-arnaldo{
+.profile-arnaldo{ 
     border-radius: 50%;
     margin-top: 50px;
-} */
+    width: 80%;
+    height: 10%;
+} 
 
 .store-photo{
-    border-radius: 4%;
     width: 80%;
     height: 10%;
 }
@@ -366,7 +365,7 @@ main{
 
 section,
 aside{
-    width: 45%;
+    width: 80%;
 }
 
 section header{
@@ -387,6 +386,11 @@ aside div{
     padding: 5px;
     text-align: center;
 }
+
+.container-img{
+    display: flex;
+}
+
 /* página de contato */
 .contact-form{
     font-family: 'Quicksand', sans-serif;
@@ -608,50 +612,27 @@ ins{
 
 .catalog-description{
     font-family: 'Quicksand', sans-serif;
-    width: 80%;
-    padding-left: 10%;
 }
 
-.catalog-img {
-    width: 80%;
+#work-philosophy details summary{
+    background-color: var(--color-brown);
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+    margin-top: 30px;
+    color: #fff;
+}
+#deadline details summary {
+    background-color: var(--color-brown);
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+    color: #fff;
 }
 
-.newsletter h3{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+.faq{
     text-align: center;
-}
-
-.payment-methods{
-    display: flex;
-}
-
-.sapataria-info {
-    width: 100%;
-}
-
-.delivery-methods{
-    display: flex; 
-}
-
-.carrinho{
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.terms{
-    text-align: justify;
-    margin-left: 20%;
-    font-family: 'Nunito', sans-serif;
-}
-
-.termos{
-   margin-top: 100px;
-}
-
-.video-sapa {
-    width: 100%;
-    padding-left: 100%;
+    margin-top: 90px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
 }
 
 /* responsividade */ 
@@ -801,8 +782,9 @@ header {
     width: 40%;
 }
 
-.catalog-description {
-    width: 50%;
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 #footer_content {
@@ -810,6 +792,10 @@ header {
     padding: 3rem 2rem;
 }
 
+}
+
+.carousel-inner{
+    height: 42em;
 }
 
 
