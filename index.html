@@ -8,7 +8,8 @@
     <meta name="author" content="Mayara Franciele">
 
     <link rel="stylesheet" href="reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,136 +22,154 @@
 
     <header>
         <nav>
-            
+
             <div class="parent-box-2">
                 <img src="./img/logo-sapataria.png" alt="Logo da Página" class="logo-sapataria">
                 <div class="header-link">
-                    <li><a href="index.html">Início</a>  </li>
+                    <li><a href="index.html">Início</a> </li>
                     <li><a href="sobre-nos.html">Sobre nós</a> </li>
                     <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <div class="carrinho">
+                    <a href="carrinho.html"><img src="./img/icons8-carrinho-de-compras-96 (1).png"
+                            alt="loco do carrinho" width="40" height="40"></a>
                 </div>
+                </div>
+                
             </div>
+
+
         </nav>
+
+
     </header>
 
-<div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/carrossel/Slide1.png" class="d-block w-100"
+                        alt="Imagem de sapato de couro masculino com um anúncio de desconto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carrossel/Slide2.png" class="d-block w-100"
+                        alt="Imagem de uma mulher sorrindo olhando para o celular">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carrossel/Slide3.png" class="d-block w-100" alt="Imagens de acessórios de couro">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/carrossel/Slide1.png" class="d-block w-100" alt="Imagem de sapato de couro masculino com um anúncio de desconto">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/carrossel/Slide2.png" class="d-block w-100" alt="Imagem de uma mulher sorrindo olhando para o celular">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/carrossel/Slide3.png" class="d-block w-100" alt="Imagens de acessórios de couro">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
     </div>
-</div>
 
-        <div class="title-products">
-            <h2>LANÇAMENTO</h2>
-        </div>
-        
-        <div class="products">
-            <div class="pics-index">
-                <img src="./img/oregon-shoe.avif" alt="Sapato masculino de couro preto">
-                <p>Sapato preto de couro sintetico</p>
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+    <div class="title-products">
+        <h2>LANÇAMENTO</h2>
+    </div>
 
-            <div class="pics-index">
-                <img src="./img/brown-shoe.avif" alt="Sapato masculino de couro marrom">
-                <p> Sapato marrom de couro </p>
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+    <div class="products">
+        <div class="pics-index">
+            <img src="./img/oregon-shoe.avif" alt="Sapato masculino de couro preto">
+            <p>Sapato preto de couro sintetico</p>
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/white-shoe.avif" alt="Sapato de couro masculino branco">
+        <div class="pics-index">
+            <img src="./img/brown-shoe.avif" alt="Sapato masculino de couro marrom">
+            <p> Sapato marrom de couro </p>
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
+
+        <div class="pics-index">
+            <img src="./img/white-shoe.avif" alt="Sapato de couro masculino branco">
 
 
-                <p> Sapato branco</p>
+            <p> Sapato branco</p>
 
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/brown-boot.avif" alt="Bota feminina de couro marrom">
-                <p>Bota marrom de couro</p>
-                <h5> R$ 499,99 </h5>
-            </div> <!-- div produtos -->
+        <div class="pics-index">
+            <img src="./img/brown-boot.avif" alt="Bota feminina de couro marrom">
+            <p>Bota marrom de couro</p>
+            <h5> R$ 499,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/black-boot.avif" alt="Bota feminina de couro preta"> <!--sapatos até aqui-->
-                <p> Bota preta de couro sintetico</p>
-                <h5> R$ 499,99 </h5>
-            </div> <!-- div produtos -->
+        <div class="pics-index">
+            <img src="./img/black-boot.avif" alt="Bota feminina de couro preta"> <!--sapatos até aqui-->
+            <p> Bota preta de couro sintetico</p>
+            <h5> R$ 499,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/pink-bag.webp" alt="Bolsa feminina de couro rosa"> <!--bolsas daqui em diante-->
-                <p> Bolsa rosa</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
+        <div class="pics-index">
+            <img src="./img/pink-bag.webp" alt="Bolsa feminina de couro rosa"> <!--bolsas daqui em diante-->
+            <p> Bolsa rosa</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
 
-            <div class="pics-index">
-                <img src="./img/black-bag.webp" alt="Bolsa feminina de couro preto">
-                <p> Bolsa preto</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
+        <div class="pics-index">
+            <img src="./img/black-bag.webp" alt="Bolsa feminina de couro preto">
+            <p> Bolsa preto</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
 
-            <div class="pics-index">
-                <img src="./img/blue-bag.webp" alt="Bolsa feminina de couro azul">
-                <p> Bolsa azul</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
+        <div class="pics-index">
+            <img src="./img/blue-bag.webp" alt="Bolsa feminina de couro azul">
+            <p> Bolsa azul</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
 
-            <div class="pics-index">
-                <img src="./img/brown-belt.jpg" alt="Cinto masculino de couro marrom"> <!--cintos daqui em diante-->
-                <p> Cinto marrom de couro </p>
-                <h5> R$ 199,99 </h5>
-            </div> <!-- div fotos -->
+        <div class="pics-index">
+            <img src="./img/brown-belt.jpg" alt="Cinto masculino de couro marrom"> <!--cintos daqui em diante-->
+            <p> Cinto marrom de couro </p>
+            <h5> R$ 199,99 </h5>
+        </div> <!-- div fotos -->
 
-            <div class="pics-index">
-                <img src="./img/black-belt.webp" alt="Cinto masculino de couro preto">
-                <p> Cinto preto de couro</p>
-                <h5> R$ 199,99 </h5>
-            </div> <!-- div fotos -->
-        </div> <!-- div dos produtos -->
+        <div class="pics-index">
+            <img src="./img/black-belt.webp" alt="Cinto masculino de couro preto">
+            <p> Cinto preto de couro</p>
+            <h5> R$ 199,99 </h5>
+        </div> <!-- div fotos -->
+    </div> <!-- div dos produtos -->
 
-        <h2 class="faq">Dúvidas Frequentes</h2>
-        <section class="section-home" id="work-philosophy">
+    <h2 class="faq">Dúvidas Frequentes</h2>
+    <section class="section-home" id="work-philosophy">
         <details>
             <!-- <div class="parent-box">  -->
-                <summary> Qual a Nossa Filosofia de Trabalho?</summary> 
-                        <img src="./img/icons8-trabalho-50.png">   
+            <summary> Qual a Nossa Filosofia de Trabalho?</summary>
+            <img src="./img/icons8-trabalho-50.png">
             <!-- </div> -->
-            <p class="paragraphs-beginning">O trabalho é um processo universal, está presente em todos os homens, em todas as gerações, mas também tem uma dimensão pessoal, pois é através do sujeito que se efetua e esse sujeito, através do trabalho, tem uma forma de realização pessoal.</p>
+            <p class="paragraphs-beginning">O trabalho é um processo universal, está presente em todos os homens, em
+                todas as gerações, mas também tem uma dimensão pessoal, pois é através do sujeito que se efetua e esse
+                sujeito, através do trabalho, tem uma forma de realização pessoal.</p>
         </details>
-        </section>
+    </section>
 
 
     <section class="section-home" id="deadline">
         <details>
             <!-- <div class="parent-box"> -->
-                <summary>Qual o Nosso Prazo de Entrega?</summary>
-                <img src="./img/icons8-entrega-50.png">
+            <summary>Qual o Nosso Prazo de Entrega?</summary>
+            <img src="./img/icons8-entrega-50.png">
             <!-- </div> -->
-            
+
 
             <p class="paragraphs-beginning">Limpeza e hidratação de sapatos e artigos de couro: Esse é um serviço de
                 manutenção básico que pode ser realizado rapidamente em uma sapataria. Geralmente, esse serviço pode ser
@@ -163,7 +182,8 @@
                 complexos, como a substituição de uma parte do couro ou a costura de um rasgo, o prazo pode ser de até
                 10 dias úteis.</p>
 
-            <p class="paragraphs-beginning">Fabricação de sapatos e artigos de couro sob medida: Se a sapataria oferecer a
+            <p class="paragraphs-beginning">Fabricação de sapatos e artigos de couro sob medida: Se a sapataria oferecer
+                a
                 fabricação de sapatos e artigos de couro sob medida, o prazo pode ser mais longo. Geralmente, esse
                 serviço requer a realização de várias medidas e ajustes para garantir que o produto final seja
                 perfeito.Por isso, o prazo pode variar de 10 a 20 dias úteis, dependendo do tipo de produto e da
@@ -178,51 +198,54 @@
         </details>
     </section>
 
-        <footer>
-            <div id="footer_content">    
-                <div id="footer-info">
-                    <h3> Endereço </h3>
-                    <p> Rua Forte do Leme, 52, Jd. Santa Adélia, São Paulo - SP</p>
-                    <h3> Contato </h3>
-                    <p> Telefone: (11) 3371-1279 </p>
+    <footer>
+        <div id="footer_content">
+            <div id="footer-info">
+                <h3> Endereço </h3>
+                <p> Rua Forte do Leme, 52, Jd. Santa Adélia, São Paulo - SP</p>
+                <h3> Contato </h3>
+                <p> Telefone: (11) 3371-1279 </p>
+            </div>
+
+            <div id="footer_payment">
+                <h3>Formas de Pagamento</h3>
+                <div id="footer_payment_method">
+                    <img src="img\icons8-pix-48.png" class="footer-payments">
+
+                    <img src="img\icons8-visa-48.png" class="footer-payments">
+
+                    <img src="img\icons8-mastercard-48 (1).png" class="footer-payments">
+
+                    <img src="img\Untitled (3).png" class="footer-payments">
+
+                    <img src="img\icons8-boleto-bankario-48.png" class="footer-payments">
                 </div>
-                    
-                <div id="footer_payment">
-                    <h3>Formas de Pagamento</h3>
-                        <div id="footer_payment_method">
-                            <img src="img\icons8-pix-48.png" class="footer-payments">
-                                
-                            <img src="img\icons8-visa-48.png" class="footer-payments">
-                                
-                            <img src="img\icons8-mastercard-48 (1).png" class="footer-payments">
-                                
-                            <img src="img\Untitled (3).png" class="footer-payments">
-                                
-                            <img src="img\icons8-boleto-bankario-48.png" class="footer-payments">
-                        </div>
-                </div> 
-                    
-                <div id="footer_delivery">
-                    <h3> Entrega do Produto </h3>
-                        <div class="footer_delivery_method">
-                                <img src=" img\icons8-entrega-64.png" class="footer-delivery-icons">
-                        </div>
+            </div>
 
-                        <div class="footer_delivery_method">
-                                <img src="img\icons8-correio-60.png" class="footer-delivery-icons">
-                        </div>
-
-                        <div class="footer_delivery_method">
-                                <img src="img\icons8-loja-50.png" class="footer-delivery-icons">
-                        </div>
+            <div id="footer_delivery">
+                <h3> Entrega do Produto </h3>
+                <div class="footer_delivery_method">
+                    <img src=" img\icons8-entrega-64.png" class="footer-delivery-icons">
                 </div>
 
+                <div class="footer_delivery_method">
+                    <img src="img\icons8-correio-60.png" class="footer-delivery-icons">
                 </div>
 
-                <div id="footer_copyright">
-                        <p> Copyright © 2023 TermsFeed®. All rights reserved. </p>
+                <div class="footer_delivery_method">
+                    <img src="img\icons8-loja-50.png" class="footer-delivery-icons">
                 </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            </div>
+
+        </div>
+
+        <div id="footer_copyright">
+            <p> Copyright © 2023 TermsFeed®. All rights reserved. </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
