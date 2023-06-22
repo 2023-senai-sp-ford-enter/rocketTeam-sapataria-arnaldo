@@ -518,6 +518,7 @@ aside div{
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
+    box-sizing: content-box;
 }
 
 .field:hover{
