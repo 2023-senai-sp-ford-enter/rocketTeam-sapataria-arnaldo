@@ -357,6 +357,7 @@ footer{
     width: 80%;
     height: 10%;
     padding-left: 20%;
+    border-radius: 50%;
 }
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main{
@@ -635,6 +636,11 @@ ins{
     margin-top: 90px;
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
+}
+
+.video-sapa {
+    padding-left: 8rem;
+    width: 50%;
 }
 
 /* responsividade */ 
