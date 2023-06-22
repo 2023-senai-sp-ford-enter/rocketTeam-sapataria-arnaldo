@@ -347,13 +347,13 @@ footer{
 
 .profile-arnaldo{ 
     border-radius: 50%;
-    margin-top: 50px;
     width: 80%;
     height: 10%;
     padding-left: 20%;
 } 
 
 .store-photo{
+    display: flex;
     width: 80%;
     height: 10%;
     padding-left: 20%;
@@ -391,6 +391,8 @@ aside div{
 
 .container-img{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* página de contato */
@@ -635,6 +637,10 @@ ins{
     margin-top: 90px;
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
+}
+
+.container{
+    margin: auto;
 }
 
 /* responsividade */ 
