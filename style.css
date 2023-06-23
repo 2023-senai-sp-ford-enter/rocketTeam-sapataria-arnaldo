@@ -676,6 +676,10 @@ h1.termos{
     font-weight: bold;
 }
 
+
+
+/*////////////////////////////////*/
+
 .carrinho{
     font-weight: 500;
     font-size: 1rem;
@@ -684,7 +688,7 @@ h1.termos{
 .carrinho-img{
     height: 120px;
     width: 120px;
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -755,7 +759,10 @@ span{
 
 .carrinho-items{
     margin-left: 50px;
-    transition: 0.35s ease;
+    
+}
+.carrinho-items img{
+    transition: all 0.35s ease 0s;
 }
 
 .carrinho-items img:hover {
@@ -942,10 +949,6 @@ span{
 
     .section-carrinho{
         width: 0%;
-    }
-
-    .popular-images-div{
-
     }
 
 }
