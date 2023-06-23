@@ -368,6 +368,11 @@ footer {
     border-radius: 50%;
 }
 
+.video-sapa {
+    padding-left: 8rem;
+    width: 50%;
+}
+
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
 main {
     padding: 50px 0px;
@@ -616,6 +621,7 @@ aside div {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    margin-bottom: 5rem;
 }
 
 .price del {
@@ -751,7 +757,7 @@ span{
 
 .product-title{
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .carrinho-items{
@@ -763,6 +769,11 @@ span{
     transform: scale(0.9) translateY(5px);
     transition: 0.35s ease;
 
+}
+
+.carrinho-img {
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -840,7 +851,11 @@ span{
 
     .store-photo {
         width: 100%;
-        padding-top: 5rem;
+        margin-bottom: 60rem;
+    }
+
+    .profile-arnaldo {
+        margin-bottom: 90rem;
     }
 
     .local-sapataria-img {
@@ -879,6 +894,7 @@ span{
         grid-gap: 10px;
         justify-content: center;
         width: 30%;
+        padding-left: 5rem;
     }
 
     .products {
@@ -902,7 +918,8 @@ span{
 
     .paragraphs-about-us {
         width: 100%;
-        padding-left: 10%;
+        padding-left: 5rem;
+        font-size: 15pt;
     }
 
     .video-sapa {
