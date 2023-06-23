@@ -747,9 +747,6 @@ span{
 
 }
 
-.section-carrinho{
-    width: 0%;
-}
 
 .product-title{
     font-family: 'Quicksand', sans-serif;
@@ -766,6 +763,9 @@ span{
     transition: 0.35s ease;
 
 }
+
+
+
 
 /* fim do carrinho de compras*/
 
@@ -940,7 +940,13 @@ span{
         margin-top: 100px;
     }
 
-    
+    .section-carrinho{
+        width: 0%;
+    }
+
+    .popular-images-div{
+
+    }
 
 }
 
