@@ -655,16 +655,132 @@ ins {
     font-size: 40px;
 }
 
-/* responsividade */ 
-@media screen and (max-width: 600px) { 
-.banner {
-    width: 50%;
-    height: 10%;
+.catalog-items img:hover {
+    transform: scale(0.9) translateY(5px);
+    transition: 0.35s ease;
 }
-   
-.parent-box {
-    width: 40%;
+
+.terms p{
+    text-align: justify;
 }
+
+.terms {
+    margin: auto;
+    line-height: 1.5;
+}
+
+h1.termos{
+    font-weight: bold;
+}
+
+.terms h4, strong{
+    font-weight: bold;
+}
+
+.carrinho{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.carrinho-img{
+    height: 120px;
+    width: 120px;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+.carrinho-layout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrinho-layout h1{
+    font-weight: 1000;
+    padding-bottom: 20px;
+}
+
+.carrinho-botão{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 30px 100px;
+    padding: 20px 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.carrinho-botão:hover{
+    background-color: #424242;
+}
+
+.carrinho-icon-fogo{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.carrinho-botão a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrinho-botão a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.popular-carrinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+.popular-images{
+    display: flex;
+    margin-left: 150px;
+
+}
+
+
+.product-title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.carrinho-items{
+    margin-left: 50px;
+    transition: 0.35s ease;
+}
+
+.carrinho-items img:hover {
+    transform: scale(0.9) translateY(5px);
+    transition: 0.35s ease;
+
+}
+
+
+
+
+/* fim do carrinho de compras*/
+
+
+/* responsividade */
+@media screen and (max-width: 600px) {
+    .banner {
+        width: 50%;
+        height: 10%;
+    }
+
+    .parent-box {
+        width: 40%;
+    }
 
     .background {
         width: 100%;
@@ -825,7 +941,13 @@ ins {
         margin-top: 100px;
     }
 
-    
+    .section-carrinho{
+        width: 0%;
+    }
+
+    .popular-images-div{
+
+    }
 
 }
 
