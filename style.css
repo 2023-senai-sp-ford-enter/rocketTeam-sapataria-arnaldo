@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 
-:root{
+:root {
     --color-main: #000000;
-    --color-brown:#8E3200;
+    --color-brown: #8E3200;
     --color-white-header: #ffffff;
     --color-brown-neutral: #772a00;
 }
 
-body{
+body {
     background-color: #fff;
     font-family: 'Opens Sans', sans-serif;
     text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
     list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
 }
+
 /* página inicial */
-.background{
+.background {
     /*background-image: url(img/shoe-master.avif);*/
-    background-repeat: no-repeat; /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
-    background-size: cover; /* aqui é para a imagem ocupar a área toda */
+    background-repeat: no-repeat;
+    /* aqui eu quero que a imagem seja inserida apenas uma vez no plano de fundo */
+    background-size: cover;
+    /* aqui é para a imagem ocupar a área toda */
     background-position: center top;
     width: 100%;
     max-width: 100%;
@@ -28,20 +31,22 @@ body{
 
 nav {
     /* Usado inline block para que o nav tenha a mesma altura sem necessidade ajustar o height */
-    display:inline-block;
-    width:100%;
+    display: inline-block;
+    width: 100%;
     height: 10px;
 }
+
 .logo-sapataria {
-    height:6%;
-    width:6%;
+    height: 6%;
+    width: 6%;
     margin: 10px;
 }
 
 .menu {
     width: 100%;
-    position:initial;
+    position: initial;
 }
+
 .parent-box {
     display: flex;
     align-items: center;
@@ -53,7 +58,7 @@ nav {
     padding: 20px 20px 20px 20px;
 }
 
-.parent-box-2 > p {
+.parent-box-2>p {
     position: absolute;
     margin-top: -30px;
     left: 30px;
@@ -65,7 +70,7 @@ nav {
     left: 30;
 }
 
-.paragraphs-about-us{
+.paragraphs-about-us {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     padding: 40px 20px 20px 20px;
@@ -75,10 +80,11 @@ nav {
 
 }
 
-.parent-box img{
+.parent-box img {
     height: 30px;
     margin-left: 20px;
 }
+
 .parent-box-caption {
     position: absolute;
     margin-top: 10px;
@@ -93,14 +99,15 @@ nav {
 }
 
 header {
-    
+
     justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000; /* aqui serve para posicionar elementos em camadas uns sobre os outros */
+    z-index: 1000;
+    /* aqui serve para posicionar elementos em camadas uns sobre os outros */
     /*position: fixed;*/
     transition: all .35s ease;
     background-color: var(--color-brown);
@@ -112,7 +119,7 @@ header {
     padding: 20px 20px 20px 20px;
 }
 
-.parent-box > p {
+.parent-box>p {
     position: absolute;
     margin-top: -30px;
     left: 30px;
@@ -128,8 +135,8 @@ header {
     font-weight: 500;
     font-size: 1rem;
     width: 10%;
-    max-width:100px;
-    max-height:100px;
+    max-width: 100px;
+    max-height: 100px;
     width: auto;
     height: auto;
     float: left;
@@ -140,22 +147,23 @@ header {
     font-size: 12pt;
     gap: 5rem;
     padding-left: 5%;
-    padding-top: 3%;
+    align-items: center;
 }
 
-.header-link a{
+.header-link a {
     color: var(--color-white-header);
     font-weight: 700;
     transition: 0.3s;
     text-decoration: none;
 }
 
-.header-link a:hover{
+.header-link a:hover {
     color: #dba776;
 }
 
-.banner{
-    padding: 10px 0px 0px 0px; ;
+.banner {
+    padding: 10px 0px 0px 0px;
+    ;
     line-height: 4rem;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
@@ -172,7 +180,7 @@ header {
     margin: auto;
 }
 
-.banner-text{
+.banner-text {
     font-size: 30px;
     font-family: Helvetica;
     color: var(--color-main);
@@ -185,7 +193,7 @@ header {
     padding-top: 0%;
 }
 
-.title-products h2{
+.title-products h2 {
     font-size: 40px;
     margin-top: 10px;
     padding-top: 50px;
@@ -193,35 +201,35 @@ header {
     font-family: 'Quicksand', sans-serif;
 }
 
-.paragraphs-beginning{
+.paragraphs-beginning {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     padding: 20px 20px 20px 20px;
 }
 
-.banner button{
+.banner button {
     background-color: var(--color-main);
     padding: 1rem 3rem 1rem;
     border-radius: 5px;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.banner button:hover{
-    background-color:var(--color-main);
+.banner button:hover {
+    background-color: var(--color-main);
     transform: scaleY(1.2);
 }
 
-section h2{
+section h2 {
     align-items: center;
     text-align: center;
     font-size: 2rem;
 }
 
-.products{
-    display:flex;
+.products {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
@@ -229,18 +237,19 @@ section h2{
     text-align: center;
 }
 
-.pics-index img{
+.pics-index img {
     width: 200px;
     height: auto;
     transition: 0.35s ease;
     cursor: pointer;
 }
 
-.pics-index img:hover{
+.pics-index img:hover {
     transform: scale(0.9) translateY(5px);
 }
+
 /* rodape da página inicial */
-footer{
+footer {
     width: 100%;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -251,7 +260,7 @@ footer{
 }
 
 #footer_content {
-    background-color:var(--color-brown);
+    background-color: var(--color-brown);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
@@ -315,7 +324,7 @@ footer{
 }
 
 /* página sobre nós */
-.title-about-us{
+.title-about-us {
     margin: 5px 5px 5px 30px;
     font-size: 35px;
     padding-top: 50px;
@@ -323,14 +332,14 @@ footer{
     font-family: 'Quicksand', sans-serif;
 }
 
-.subtitle-about-us{
+.subtitle-about-us {
     margin: 5px 5px 5px 5px;
     font-size: 20px;
     padding: 10px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.title-arnaldo{
+.title-arnaldo {
     margin: 10px 10px 10px 30px;
     font-size: 35px;
     padding: 30px 30px;
@@ -338,66 +347,66 @@ footer{
     font-family: 'Quicksand', sans-serif;
 }
 
-.subtitle-arnaldo{
+.subtitle-arnaldo {
     margin: 10px 10px 10px 10px;
     font-size: 20px;
     padding: 30px 30px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.profile-arnaldo{ 
+.profile-arnaldo {
     border-radius: 50%;
     width: 80%;
     height: 10%;
     padding-left: 20%;
-} 
+}
 
 .store-photo{
-    display: flex;
     width: 80%;
     height: 10%;
     padding-left: 20%;
     border-radius: 50%;
 }
+
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
-main{
+main {
     padding: 50px 0px;
     display: flex;
     justify-content: space-around;
 }
 
 section,
-aside{
+aside {
     width: 80%;
 }
 
-section header{
+section header {
     padding: 5px;
     text-align: center;
 }
 
-section div{
+section div {
     text-align: center;
 }
 
-aside header{
+aside header {
     padding: 5px;
     text-align: center;
 }
 
-aside div{
+aside div {
     padding: 5px;
     text-align: center;
 }
 
-.container-img{
+.container-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* página de contato */
-.contact-form{
+.contact-form {
     font-family: 'Quicksand', sans-serif;
     position: relative;
     display: flex;
@@ -410,39 +419,39 @@ aside div{
 }
 
 .local-sapataria-img {
-    width:80%; 
-    height:50%;
+    width: 80%;
+    height: 50%;
 }
 
-.right{
-     margin-top: 150px;
-     margin-right: 50px;
-} 
+.right {
+    margin-top: 150px;
+    margin-right: 50px;
+}
 
-.left{
+.left {
     margin-bottom: 150px;
 }
 
-.left h2{
+.left h2 {
     margin-bottom: 1rem;
 }
 
-.hour p{
+.hour p {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 5px;  
+    margin-top: 5px;
 }
 
-.hour h2{
-  margin-top: 8px;  
-  position:relative;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-size: 21px;
-  font-family: 'Quicksand', sans-serif;
+.hour h2 {
+    margin-top: 8px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.social-media{
+.social-media {
     margin-top: 6px;
     display: flex;
     gap: 5px;
@@ -453,41 +462,42 @@ aside div{
     border-radius: 20px;
     opacity: 1;
 }
-.home-icons{
+
+.home-icons {
     margin-top: 6px;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
-.social-media img{
+.social-media img {
     cursor: pointer;
 }
 
-.newsletter{
+.newsletter {
     background-color: #EFF2F7;
 }
 
-.newsletter h1{
+.newsletter h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     text-align: center;
     padding-top: 1rem;
 }
 
-.newsletter h3{
+.newsletter h3 {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     text-align: center;
 }
 
-.newsletter p{
+.newsletter p {
     font-family: 'Quicksand', sans-serif;
     font-size: 10px;
     text-align: center;
     padding-bottom: 1rem;
 }
 
-.btn-newsletter{
-    background-color:  var(--color-main);
+.btn-newsletter {
+    background-color: var(--color-main);
     cursor: pointer;
     outline: none;
     border: none;
@@ -498,11 +508,11 @@ aside div{
     height: 3%;
 }
 
-.btn-newsletter:hover{
-    background-color:#b1aba4;
+.btn-newsletter:hover {
+    background-color: #b1aba4;
 }
 
-.field-news{
+.field-news {
     width: 10%;
     height: 3%;
     border: 2px solid color black;
@@ -512,7 +522,7 @@ aside div{
     margin-bottom: 10px;
 }
 
-.field{
+.field {
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
@@ -524,16 +534,16 @@ aside div{
     box-sizing: content-box;
 }
 
-.field:hover{
+.field:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.field:focus{
+.field:focus {
     background-color: #fff;
     border: 2px solid rgba(30, 85, 250, 0.47);
 }
 
-.area{
+.area {
     min-height: 150px;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -544,11 +554,11 @@ aside div{
     margin-bottom: 22px;
 }
 
-.button{
+.button {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color:  var(--color-main);
+    background-color: var(--color-main);
     cursor: pointer;
     outline: none;
     border: none;
@@ -556,12 +566,14 @@ aside div{
     transition: .3s;
     border-radius: 20px;
 }
+
 /* o hover ativa estilos em um elemento */
-.button:hover{
-    background-color:#b1aba4;
+.button:hover {
+    background-color: #b1aba4;
 }
+
 /* página de catálogo */
-.catalog-title{
+.catalog-title {
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     display: block;
@@ -571,7 +583,7 @@ aside div{
     margin-bottom: 50px;
 }
 
-.catalog-products{
+.catalog-products {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -582,7 +594,7 @@ aside div{
     justify-content: space-between;
 }
 
-.catalog-img{
+.catalog-img {
     width: 100%;
     align-items: center;
     display: flex;
@@ -590,14 +602,15 @@ aside div{
     max-width: 200px;
     position: relative;
     cursor: pointer;
+    transition: .35s ease;
 }
 
-.catalog-info{
+.catalog-info {
     position: relative;
     width: 100%;
 }
 
-.price{
+.price {
     align-items: center;
     border-top: 1px solid border;
     display: flex;
@@ -605,28 +618,29 @@ aside div{
     padding: 15px;
 }
 
-.price del{
+.price del {
     color: #ccc;
     font-size: 18px;
 }
 
-ins{
+ins {
     color: #ff6100;
     text-decoration: none;
     font-size: 18px;
 }
 
-.catalog-description{
+.catalog-description {
     font-family: 'Quicksand', sans-serif;
 }
 
-#work-philosophy details summary{
+#work-philosophy details summary {
     background-color: var(--color-brown);
     padding: 2%;
     border-bottom: 2px solid #282828;
     margin-top: 30px;
     color: #fff;
 }
+
 #deadline details summary {
     background-color: var(--color-brown);
     padding: 2%;
@@ -634,20 +648,11 @@ ins{
     color: #fff;
 }
 
-.faq{
+.faq {
     text-align: center;
     margin-top: 90px;
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
-}
-
-.container{
-    margin: auto;
-}
-
-.video-sapa {
-    padding-left: 8rem;
-    width: 50%;
 }
 
 /* responsividade */ 
@@ -661,167 +666,180 @@ ins{
     width: 40%;
 }
 
-.background {
-    width: 100%;
-}
+    .background {
+        width: 100%;
+    }
 
     .contact-section,
-    .contact-form{
-    padding-left: 80%;
-    width: 50%;
+    .contact-form {
+        padding-left: 80%;
+        width: 50%;
     }
 
-aside {
+    aside {
         width: 50%;
         margin: 10%;
-}
+    }
 
-.social-media {
-    padding-left: 170%;
-}
+    .social-media {
+        padding-left: 170%;
+    }
 
-.hour {
-    width: 10%;
-}
+    .hour {
+        width: 10%;
+    }
 
-.right {
+    .right {
         width: 50%;
         padding-left: 100%;
-}
-
-.left {
-    width: 400%;
     }
 
-.page-title {
-    margin: 10px 0;
-}
-  
-.banner-text {
-    padding-top: 10%;
-    width: 160%;
-}
-
-header {
-    padding-bottom: 5%;
-}
-
-.logo-sapataria {
-    width: 20%;
-}
-
-.header-link {
-    padding-top: 10%;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-gap: 20px;
-    justify-content: center;
+    .left {
+        width: 400%;
     }
 
-.store-photo {
-    width: 100%;
-    padding-top: 5rem;
-}
+    .page-title {
+        margin: 10px 0;
+    }
 
-.local-sapataria-img {
-    width: 200%;
-}
+    .banner-text {
+        padding-top: 10%;
+        width: 160%;
+    }
 
-.banner-home {
-    width: 100%;
-    height: 40%;
-}
+    header {
+        padding-bottom: 5%;
+    }
 
-.title-products h2 {
-    padding-top: 50%;
-}
+    .logo-sapataria {
+        width: 20%;
+    }
 
-.pics-index img{
-    width: 300px;
-    height: auto;
-    transition: 0.35s ease;
-    cursor: pointer;
-}
+    .header-link {
+        padding-top: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+    }
 
-.title-products {
-    width: 50%;
-    height: 10%;
-    padding-left: 10%;
-}
+    .store-photo {
+        width: 100%;
+        padding-top: 5rem;
+    }
 
-.home-icons {
-    width: 10%;
-    height: 10%;
-}
+    .local-sapataria-img {
+        width: 200%;
+    }
 
-.title-about-us {
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    .banner-home {
+        width: 100%;
+        height: 40%;
+    }
+
+    .title-products h2 {
+        padding-top: 50%;
+    }
+
+    .pics-index img {
+        width: 300px;
+        height: auto;
+        transition: 0.35s ease;
+        cursor: pointer;
+    }
+
+    .title-products {
+        width: 50%;
+        height: 10%;
+        padding-left: 10%;
+    }
+
+    .home-icons {
+        width: 10%;
+        height: 10%;
+    }
+
+    .title-about-us {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 10px;
         justify-content: center;
         width: 30%;
-}
+    }
 
-  .products {
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
         justify-content: center;
-  }
+    }
 
-  main {
-    width: 50%;
-  }
+    main {
+        width: 50%;
+    }
 
-  .parent-box-2 {
-    width: 40%;
-}
+    .parent-box-2 {
+        width: 40%;
+    }
 
-.paragraphs-beginning {
-    width: 150%;
-    padding-left: 0%;
-}
+    .paragraphs-beginning {
+        width: 150%;
+        padding-left: 0%;
+    }
 
-.paragraphs-about-us {
-    width: 100%;
-    padding-left: 10%;
-}
+    .paragraphs-about-us {
+        width: 100%;
+        padding-left: 10%;
+    }
 
-.video-sapa {
-    padding-left: 8rem;
-    width: 100%;
-}
+    .video-sapa {
+        padding-left: 8rem;
+        width: 100%;
+    }
 
-.catalog-img {
-    width: 80%;
-}
+    .catalog-img {
+        width: 80%;
+    }
 
-.catalog-items {
-    padding-left: 10%;
-    width: 40%;
-}
+    .catalog-items {
+        padding-left: 10%;
+        width: 40%;
+    }
 
-.carrinho{
-    font-weight: 500;
-    font-size: 1rem;
-}
+    .carrinho {
+        font-weight: 500;
+        font-size: 1rem;
+    }
 
-#footer_content {
-    grid-template-columns: repeat(1,1fr);
-    padding: 3rem 2rem;
-}
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    /* inicio dos termos de uso */
+
+    .terms {
+        text-align: justify;
+        margin-left: 20%;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .termos {
+        margin-top: 100px;
+    }
+
+    
 
 }
 
 
     @media screen and (max-width: 380px) {
-       .baseboard{
-        padding: 10px 5px;
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        grid-gap: 20px;
-        justify-content: center;
-      }
+        .baseboard {
+            padding: 10px 5px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
 
-      #footer_content {
-        grid-template-columns: repeat(1,1fr);
-        padding: 3rem 2rem;
+        #footer_content {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 2rem;
+        }
     }
-    }
-  
