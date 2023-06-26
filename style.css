@@ -591,7 +591,6 @@ aside div {
 .catalog-products {
     align-items: center;
     display: flex;
-    justify-content: center;
     margin: 0 auto;
     max-width: 1300px;
     width: 100%;
@@ -599,10 +598,11 @@ aside div {
 }
 
 .catalog-img {
-    width: 100%;
+    width: 80%;
     align-items: center;
     display: flex;
     justify-content: center;
+    max-width: 300px;
     position: relative;
     cursor: pointer;
     transition: .35s ease;
@@ -682,27 +682,54 @@ h1.termos{
 }
 
 .catalog-nav{
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
-    display: flex;
     justify-content: space-between;
-    background-color: #111;
-    padding: 20px 30px 20px 30px;
-    color: #fff;
-    z-index: 1;
+    background-color: var(--color-brown);
+    align-items: center;
     position: sticky;
-    top: 66px;
 }
 
 .catalog-nav a:visited{
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white-header);
+
 }
 
 .catalog-nav a:link{
     text-decoration: none;
-    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+.catalog-nav-products {
+    display: flex;
+    font-size: 12pt;
+    gap: 5rem;
+    padding-left: 5%;
+    align-items: center;
+}
+
+.male-shoes {
+    width: 100%;
+}
+
+.female-shoes {
+    width: 100%;
+}
+
+.bolsas {
+    width: 100%;
+}
+
+.cintos {
+    width: 100%;
+}
+
+.carteiras {
+    width: 100%;
+}
+
+.mochila-catalog {
+    width: 100%;
 }
 
 /* ///////////////////////////////////////////// */
@@ -870,6 +897,14 @@ span{
 
     header {
         padding-bottom: 5%;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .catalog-nav-products {
+        width: 50%;
+        font-size: 10pt;
+        gap: 0.5rem;
     }
 
     .logo-sapataria {
@@ -877,7 +912,8 @@ span{
     }
 
     .header-link {
-        padding-top: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
         justify-content: center;
@@ -963,11 +999,41 @@ span{
 
     .catalog-img {
         width: 80%;
+        margin-left: 2rem;
     }
 
     .catalog-items {
-        padding-left: 10%;
-        width: 40%;
+        width: 100%;
+    }
+    
+    .catalog-products {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-title {
+        margin-top: 5px;
+    }
+
+    .product-title {
+        font-size: 16pt;
+        text-align: center;
+    }
+
+    .price {
+        margin-left: 4rem;
+    }
+
+    .price del{
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .price ins{
+        font-size: 20pt;
+        text-align: center;
     }
 
     .carrinho {
