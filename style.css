@@ -11,10 +11,8 @@
 body {
     background-color: #fff;
     font-family: 'Opens Sans', sans-serif;
-    text-decoration: none;
-    /* com esse comando eu posso tirar o sublinhado do link */
-    list-style: none;
-    /* com esse comando eu consigo tirar o pontinho do link */
+    text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
+    list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
 }
 
 /* página inicial */
@@ -358,16 +356,21 @@ footer {
 
 .profile-arnaldo {
     border-radius: 50%;
-    margin-top: 50px;
     width: 80%;
     height: 10%;
     padding-left: 20%;
 }
 
-.store-photo {
+.store-photo{
     width: 80%;
     height: 10%;
     padding-left: 20%;
+    border-radius: 50%;
+}
+
+.video-sapa {
+    padding-left: 8rem;
+    width: 50%;
 }
 
 /* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
@@ -403,6 +406,8 @@ aside div {
 
 .container-img {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* página de contato */
@@ -531,6 +536,7 @@ aside div {
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
+    box-sizing: content-box;
 }
 
 .field:hover {
@@ -613,6 +619,7 @@ aside div {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    margin-bottom: 5rem;
 }
 
 .price del {
@@ -781,7 +788,7 @@ span{
 
 .product-title{
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .carrinho-items{
@@ -796,6 +803,11 @@ span{
     transform: scale(0.9) translateY(5px);
     transition: 0.35s ease;
 
+}
+
+.carrinho-img {
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -873,7 +885,11 @@ span{
 
     .store-photo {
         width: 100%;
-        padding-top: 5rem;
+        margin-bottom: 60rem;
+    }
+
+    .profile-arnaldo {
+        margin-bottom: 90rem;
     }
 
     .local-sapataria-img {
@@ -912,6 +928,7 @@ span{
         grid-gap: 10px;
         justify-content: center;
         width: 30%;
+        padding-left: 5rem;
     }
 
     .products {
@@ -935,7 +952,8 @@ span{
 
     .paragraphs-about-us {
         width: 100%;
-        padding-left: 10%;
+        padding-left: 5rem;
+        font-size: 15pt;
     }
 
     .video-sapa {
