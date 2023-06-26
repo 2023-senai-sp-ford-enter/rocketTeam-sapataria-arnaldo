@@ -589,7 +589,6 @@ aside div {
     margin: 0 auto;
     max-width: 1300px;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -598,7 +597,6 @@ aside div {
     align-items: center;
     display: flex;
     justify-content: center;
-    max-width: 200px;
     position: relative;
     cursor: pointer;
     transition: .35s ease;
@@ -675,6 +673,35 @@ h1.termos{
 .terms h4, strong{
     font-weight: bold;
 }
+
+.catalog-nav{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 20px 30px 20px 30px;
+    color: #fff;
+    z-index: 1;
+    position: sticky;
+    top: 66px;
+}
+
+.catalog-nav a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.catalog-nav a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+/* inicio do carrinho de compras */
 
 
 
