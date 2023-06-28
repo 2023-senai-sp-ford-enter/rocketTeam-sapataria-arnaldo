@@ -595,7 +595,9 @@ aside div {
     max-width: 1300px;
     width: 100%;
     justify-content: space-between;
+    height: 380px;
 }
+
 
 .catalog-img {
     width: 80%;
@@ -606,6 +608,9 @@ aside div {
     position: relative;
     cursor: pointer;
     transition: .35s ease;
+    height: 190px;
+    object-fit: scale-down;
+    margin: auto;
 }
 
 .catalog-info {
@@ -619,9 +624,12 @@ aside div {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    margin-bottom: 5rem;
+    margin-bottom: 0 auto 5rem;
 }
 
+.button-div{
+    margin: auto;
+}
 .price del {
     color: #ccc;
     font-size: 18px;
@@ -732,6 +740,31 @@ h1.termos{
     width: 100%;
 }
 
+.botao-carrinho{
+    padding: 10px 45px;
+    background-color:#8E3200;
+    color: #fff;
+    border: none;
+    margin: 2px;
+    text-align: center;
+    transform: scale(0.9) translateY(5px);
+    transition: .35s ease;
+}
+
+.botao-carrinho a{
+    color: white;
+    text-decoration: none;
+    transform: scale(0.9) translateY(5px);
+    transition: .35s ease;
+}
+
+.botao-carrinho a:visited{
+    color: white;
+    text-decoration: none;
+    transform: scale(0.9) translateY(5px);
+    transition: .35s ease;
+}
+
 /* ///////////////////////////////////////////// */
 
 
@@ -816,7 +849,10 @@ h1.termos{
 .product-title{
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
+    width: 100%;
 }
+
+
 
 .carrinho-items{
     margin-left: 50px;
@@ -1000,6 +1036,7 @@ h1.termos{
     .catalog-img {
         width: 80%;
         margin-left: 2rem;
+        margin: auto;
     }
 
     .catalog-items {
@@ -1007,7 +1044,7 @@ h1.termos{
     }
     
     .catalog-products {
-        width: 100%;
+        width: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1024,6 +1061,7 @@ h1.termos{
 
     .price {
         margin-left: 4rem;
+        margin: auto;
     }
 
     .price del{
