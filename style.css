@@ -639,6 +639,12 @@ ins {
     font-family: 'Quicksand', sans-serif;
 }
 
+.photo-box-beginning{
+    display: inline;
+    margin:5px; 
+
+}
+
 #work-philosophy details summary {
     background-color: var(--color-brown);
     padding: 2%;
