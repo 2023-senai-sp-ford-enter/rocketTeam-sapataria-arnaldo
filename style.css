@@ -801,7 +801,7 @@ h1.termos{
     align-items: center;
 }
 
-span{
+.popular-items{
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
 }

@@ -1,5 +1,5 @@
 var valorTotal = [0,0];
-var valorProduto = [50.00, 30.00];
+var valorProduto = [349.99, 279.99];
 var qtd = [0,0];
 
 function adicionarItem(item){
