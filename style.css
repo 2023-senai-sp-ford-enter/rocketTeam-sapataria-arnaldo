@@ -751,6 +751,10 @@ h1.termos{
     transition: .35s ease;
 }
 
+.botao-carrinho:hover{
+    box-shadow: 0 0 10px 0px black;
+}
+
 .botao-carrinho a{
     color: white;
     text-decoration: none;
