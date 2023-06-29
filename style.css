@@ -700,7 +700,6 @@ h1.termos{
 
 .catalog-nav{
     justify-content: space-between;
-    background-color: var(--color-brown);
     align-items: center;
     position: sticky;
 }
@@ -710,14 +709,13 @@ h1.termos{
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
     color: var(--color-white-header);
-
 }
 
 .catalog-nav a:link{
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
-    color: var(--color-brown-neutral);
+    color: var(--color-white-header);
 }
 
 .catalog-nav-products {
