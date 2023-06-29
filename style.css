@@ -11,8 +11,10 @@
 body {
     background-color: #fff;
     font-family: 'Opens Sans', sans-serif;
-    text-decoration: none; /* com esse comando eu posso tirar o sublinhado do link */
-    list-style: none; /* com esse comando eu consigo tirar o pontinho do link */
+    text-decoration: none;
+    /* com esse comando eu posso tirar o sublinhado do link */
+    list-style: none;
+    /* com esse comando eu consigo tirar o pontinho do link */
 }
 
 /* página inicial */
@@ -361,7 +363,7 @@ footer {
     padding-left: 20%;
 }
 
-.store-photo{
+.store-photo {
     width: 80%;
     height: 10%;
     padding-left: 20%;
@@ -637,12 +639,31 @@ ins {
     font-family: 'Quicksand', sans-serif;
 }
 
+.photo-box-beginning {
+    display: inline;
+    margin: 5px;
+
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 #work-philosophy details summary {
     background-color: var(--color-brown);
     padding: 2%;
     border-bottom: 2px solid #282828;
     margin-top: 30px;
     color: #fff;
+
 }
 
 #deadline details summary {
@@ -650,6 +671,31 @@ ins {
     padding: 2%;
     border-bottom: 2px solid #282828;
     color: #fff;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
 }
 
 .faq {
@@ -664,7 +710,7 @@ ins {
     transition: 0.35s ease;
 }
 
-.terms p{
+.terms p {
     text-align: justify;
 }
 
@@ -673,11 +719,12 @@ ins {
     line-height: 1.5;
 }
 
-h1.termos{
+h1.termos {
     font-weight: bold;
 }
 
-.terms h4, strong{
+.terms h4,
+strong {
     font-weight: bold;
 }
 
@@ -746,25 +793,25 @@ h1.termos{
     font-size: 1rem;
 }
 
-.carrinho-img{
+.carrinho-img {
     height: 120px;
     width: 120px;
     padding-top: 100px;
     padding-bottom: 20px;
 }
 
-.carrinho-layout{
+.carrinho-layout {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.carrinho-layout h1{
+.carrinho-layout h1 {
     font-weight: 1000;
     padding-bottom: 20px;
 }
 
-.carrinho-botão{
+.carrinho-botão {
     background-color: #111;
     color: #fff;
     text-align: center;
@@ -775,50 +822,50 @@ h1.termos{
     cursor: pointer;
 }
 
-.carrinho-botão:hover{
+.carrinho-botão:hover {
     background-color: #424242;
 }
 
-.carrinho-icon-fogo{
+.carrinho-icon-fogo {
     width: 45px;
     height: 45px;
     margin-right: 10px;
 }
 
-.carrinho-botão a:link{
+.carrinho-botão a:link {
     text-decoration: none;
     color: #fff;
 }
 
-.carrinho-botão a:visited{
+.carrinho-botão a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-.popular-carrinho{
+.popular-carrinho {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-span{
+span {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
 }
 
-.popular-images{
+.popular-images {
     display: flex;
     margin-left: 150px;
 
 }
 
 
-.product-title{
+.product-title {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
 }
 
-.carrinho-items{
+.carrinho-items {
     margin-left: 50px;
     
 }
@@ -1058,13 +1105,20 @@ span{
         margin-top: 100px;
     }
 
-    .section-carrinho{
+    .section-carrinho {
         width: 0%;
     }
 
 }
 
 
+@media screen and (max-width: 380px) {
+    .baseboard {
+        padding: 10px 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+    }
     @media screen and (max-width: 380px) {
         .baseboard {
             padding: 10px 5px;
@@ -1073,8 +1127,8 @@ span{
             justify-content: center;
         }
 
-        #footer_content {
-            grid-template-columns: repeat(1, 1fr);
-            padding: 3rem 2rem;
-        }
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
     }
+}
