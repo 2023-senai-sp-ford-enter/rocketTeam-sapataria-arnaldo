@@ -1145,14 +1145,6 @@ span {
 
 }
 
-
-@media screen and (max-width: 380px) {
-    .baseboard {
-        padding: 10px 5px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 20px;
-        justify-content: center;
-    }
     @media screen and (max-width: 380px) {
         .baseboard {
             padding: 10px 5px;
