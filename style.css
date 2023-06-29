@@ -696,6 +696,16 @@ h1.termos{
     position: sticky;
 }
 
+.catalog-nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.catalog-nav a:hover{
+    color: #dba776;
+}
+
 .catalog-nav a:visited{
     text-decoration: none;
     color: var(--color-white-header);
